@@ -19,6 +19,16 @@
 
 * Values and Variables
 
+** Languages and Computation
+
+Every powerful language has three mechanisms for combining simple ideas to form more complex ideas:([[http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-10.html][SICP 1.1]])
+
+- primitive expressions, which represent the simplest entities the language is concerned with,
+- means of combination, by which compound elements are built from simpler ones, and
+- means of abstraction, by which compound elements can be named and manipulated as units.
+
+Today we'll begin learning Python's facilities for primitive expresions, combination, and elementary abstraction.
+
 ** Values
 
 An expression has a value, which is found by evaluating the expression. When you type expressions into the Python REPL, Python evaluates them and prints their values.

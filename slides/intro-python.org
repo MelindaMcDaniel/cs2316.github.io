@@ -1,4 +1,4 @@
-#+TITLE: Introduction to Python
+#+TITLE: Introduction to Computing with Python
 #+AUTHOR:
 #+EMAIL:
 #+DATE:
@@ -17,7 +17,27 @@
 #+LaTeX_HEADER: \hypersetup{colorlinks=true,urlcolor=blue}
 #+LaTeX_HEADER: \logo{\includegraphics[height=.75cm]{GeorgiaTechLogo-black-gold.png}}
 
-* Introduction to Python
+* Introduction to Computing with Python
+
+** Computing
+
+**Computing** is any purposeful activity that marries the representation of some dynamic domain with the representation of some dynamic machine that provides theoretical, empirical or practical understanding of that domain or that machine.
+
+-- Isbell, et. al., *(Re)Defining Computing Curricula by (Re)Defining Computing*, SIGCSE Bulletin, Volume 41, Number 4, December 2009
+
+
+** Models, Languages, Machines
+
+Computing is fundamentally a modelling activity.
+
+- A *model* is a representation of some information, physical reality, or a virtual entity in a manner that can then be interpreted, manipulated, and transformed.
+- A *language* is a means of representation.
+
+    - A language enables reasoning and manipulation of the model.
+
+- A computational *machine* allows us to execute our models.
+
+In this course we will learn the Python programming language.
 
 ** Python gives you wings!
 
@@ -27,7 +47,6 @@
 #+END_CENTER
 
 [[http://xkcd.com/353/][http://xkcd.com/353/]]
-
 
 ** The Python Language
 
@@ -123,7 +142,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 #+END_SRC
 
-`>>>` is the command prompt for the Python REPL.
+~>>>~ is the command prompt for the Python REPL.
 
 - REPL stands for *R*ead *E*val *P*rint *L*oop -- *R*ead an expression or statement at the command prompt, *E*valuate the expression or execute the statement, *P*rint the result to the console, *L*oop back to *R*ead step
 
