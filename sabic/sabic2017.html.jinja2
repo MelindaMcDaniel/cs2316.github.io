@@ -1,0 +1,74 @@
+---
+layout: sabic
+title: SABIC 2017
+---
+
+<h1>SABIC 2017</h1>
+
+<h2>Weekly Schedule</h2>
+
+<h3>Lectures in <a href="https://www.google.com/maps/place/151+6th+St+NW,+Atlanta,+GA+30313/@33.7788456,-84.3943287,17z/data=!3m1!4b1!4m5!3m4!1s0x88f50460e879b6a3:0xb6adb1b62ac6e2e9!8m2!3d33.7788456!4d-84.39214?hl=en">Biltmore Room D</a>:</h3>
+<p>Weeks 1 and 2:</p>
+<ul>
+  <li>Monday, 12:00 - 15:00</li>
+  <li>Wednesday, 12:00 - 15:00</li>
+  <li>Thursday, 12:30 - 14:30</li>
+</ul>
+<p>Week 3:</p>
+<ul>
+  <li>Monday, 12:00 - 16:00</li>
+  <li>Wednesday, 12:00 - 16:00</li>
+</ul>
+
+<h3>Office Hours</h3>
+
+<p>Weeks 1 and 2: Mondays and Thursdays, 15:30 - 17:30 in O'Keefe</p>
+<p>Week 3: Monday, 15:30 - 17:30 in O'Keefe</p>
+
+<h2>Lecture Schedule</h2>
+
+<p>
+  Topics link to slides, where available.
+</p>
+
+<p>ITCS means <a href="http://interactivepython.org/runestone/static/thinkcspy/toc.html">Interactive Think CS Textbook</a> - awesome resource!</p>
+<p>TP means Think Python, 2nd Edition, by Allen B. Downey, O'Reilly Media, December 2015. Available free at <a href="http://greenteapress.com/wp/think-python-2e/">http://greenteapress.com/wp/think-python-2e/</a> and from O'Reilly at <a href="http://shop.oreilly.com/product/0636920045267.do">http://shop.oreilly.com/product/0636920045267.do</a></p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-hover">
+
+    <tr class="table-header active">
+      <th>Date</th>
+      <th>Topics</th>
+      <th>Reading and Resources</th>
+      <th>Reminders</th>
+    </tr>
+    {% for row in table %}
+    {% if "internal_header" in row %}
+    <tr class="active"><td colspan="4">{{row["internal_header"]}}</td></tr>
+    {% else %}
+    <tr>
+      <td>{{row["date"]}}</td>
+      <td>
+        {% for item in row["topics"][:-1] %}
+        {{(item|markdown).replace("<p>","").replace("</p>","")}}<br/>
+        {% endfor %}
+        {{(row["topics"][-1]|markdown).replace("<p>","").replace("</p>","")}}
+      </td>
+      <td>
+        {% for item in row["materials"][:-1] %}
+        {{(item|markdown).replace("<p>","").replace("</p>","")}}<br/>
+        {% endfor %}
+        {{(row["materials"][-1]|markdown).replace("<p>","").replace("</p>","")}}
+      </td>
+      <td>
+        {% for item in row["reminders"][:-1] %}
+        {{(item|markdown).replace("<p>","").replace("</p>","")}}<br/>
+        {% endfor %}
+        {{(row["reminders"][-1]|markdown).replace("<p>","").replace("</p>","")}}
+      </td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+  </table>
+</div>
