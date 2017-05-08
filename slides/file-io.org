@@ -15,6 +15,7 @@
 #+LaTeX_HEADER: \lstset{frame=tb, aboveskip=1mm, belowskip=0mm, showstringspaces=false, columns=flexible, basicstyle={\scriptsize\ttfamily}, numbers=left, frame=single, breaklines=true, breakatwhitespace=true, keywordstyle=\bf}
 #+LaTeX_HEADER: \setbeamertemplate{footline}[frame number]
 #+LaTeX_HEADER: \hypersetup{colorlinks=true,urlcolor=blue}
+#+LaTeX_HEADER: \logo{\includegraphics[height=.75cm]{GeorgiaTechLogo-black-gold.png}}
 
 * File Input/Output
 
@@ -25,7 +26,7 @@
 
 #+BEGIN_SRC python
 $ python
->>> f = open("hello.txt",’w’) # open for writing, create if necessary
+>>> f = open("hello.txt","w") # open for writing, create if necessary
 >>> f.write("Hello, file!\n") # write string to file; notice \n ending
 >>> f.close()                 # close file, causing it to write to disk
 >>> exit()
@@ -41,7 +42,7 @@ $ python
 >>> contents = f.read()
 # slurp the whole file into memory
 >>> contents
-’Hello, file!\n’
+'Hello, file!\n'
 >>> exit()
 #+END_SRC
 
@@ -51,27 +52,27 @@ $ python
 - the ~readlines()~ function reads all lines into memory as a list
 
 #+BEGIN_SRC python
->>> f = open(’lines.txt’, ’r’)
+>>> f = open("lines.txt", "r")
 >>> f.readlines()
-[’line 1\n’, ’line 2\n’, ’line 3\n’]
+["line 1\n", "line 2\n", "line 3\n"]
 #+END_SRC
 
 - ~readline()~ reads one line at a time, returns empty string when fully read
 - re-open file or use seek() to go back to beginning of file
 
 #+BEGIN_SRC python
->>> f = open(’lines.txt’, ’r’)
+>>> f = open("lines.txt", "r")
 >>> f.readline()
-’line 1\n’
+'line 1\n'
 >>> f.readline()
-’line 2\n’
+'line 2\n'
 >>> f.readline()
-’line 3\n’
+'line 3\n'
 >>> f.readline()
 ''
 >>> f.seek(0)
 >>> f.readline()
-’line 1\n’
+'line 1\n'
 #+END_SRC
 
 ** Processing Lines in a Text File
@@ -79,7 +80,7 @@ $ python
 Could use readlines() and iterate through list it returns
 
 #+BEGIN_SRC python
->>> f = open(’lines.txt’, ’r’)
+>>> f = open("lines.txt", "r")
 >>> for line in f.readlines():
 ...     print line
 ...
@@ -91,7 +92,7 @@ line 3
 Better to take advantage of fact ~File~ is ~Iterable~
 
 #+BEGIN_SRC python
->>> for line in open(’lines.txt’, ’r’):
+>>> for line in open("lines.txt", "r"):
 ...     print line
 ...
 line 1
@@ -108,7 +109,7 @@ $ mkdir foo
 $ cd foo
 $ python3
 Python 3.4.0 (v3.4.0:04f714765c13, Mar 15 2014, 23:02:41) ...
->>> bar = open("bar", ’w’)
+>>> bar = open("bar", "w")
 >>> bar.write("last call!")
 10
 >>>
@@ -148,37 +149,37 @@ variable.close()
 For example, the previous bar example is:
 
 #+BEGIN_SRC python
->>> with open(’bar’, ’w’) as bar:
-...     bar.write(’last call!’)
+>>> with open("bar", "w") as bar:
+...     bar.write("last call!")
 ...
 #+END_SRC
 
 And the file is closed and flushed to disk automatically after the block under the with statement finishes.
 
-** Listing Files in a directory
+# ** Listing Files in a directory
 
-#+BEGIN_SRC python
-import os
-dir = 'some_dir'
-for path in os.listdir(dir):
-    if os.path.isdir(submission_dir):
-        print(path + '/')
-    else:
-        print(path)
-#+END_SRC
+# #+BEGIN_SRC python
+# import os
+# dir = 'some_dir'
+# for path in os.listdir(dir):
+#     if os.path.isdir(submission_dir):
+#         print(path + '/')
+#     else:
+#         print(path)
+# #+END_SRC
 
-** Moving and Copying Files
+# ** Moving and Copying Files
 
-#+BEGIN_SRC python
-import shutil
-shutil.move(source, destination)
-shutil.copy(source, destination)
-#+END_SRC
+# #+BEGIN_SRC python
+# import shutil
+# shutil.move(source, destination)
+# shutil.copy(source, destination)
+# #+END_SRC
 
-Making directories
+# Making directories
 
-#+BEGIN_SRC python
-import shutil
-dir = 'some_dir'
-shutil.mkdir(dir)
-#+END_SRC
+# #+BEGIN_SRC python
+# import shutil
+# dir = 'some_dir'
+# shutil.mkdir(dir)
+# #+END_SRC

@@ -11,7 +11,7 @@ title: Introduction to Computing with Python
 
 ## Course Description
 
-This course will provide background and experience in reading, manipulating, and exporting data for engineering, business and scientific applications. Specific topics include file I/O, string processing, web scraping, writing HTML and basic interfacing with SQL databases (reading / writing data in pre-existing tables). Students will learn to build programs controlled by basic graphical user interfaces. Assignments will be modeled after business, engineering, and scientific problems.
+This course introduces computing and programming in the Python programming language.
 
 ## Learning Outcomes
 

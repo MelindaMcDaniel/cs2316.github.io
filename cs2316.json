@@ -8,17 +8,17 @@
     "intro-python": {
         "topic": "[Intro to Python](slides/intro-python.pdf)",
         "materials": ["[ITCS - Introduction](http://interactivepython.org/runestone/static/thinkcspy/GeneralIntro/introduction.html)",
-                     "IP 1"],
+                     "TP 1"],
         "order": [2]
     },
     "values-variables": {
         "topic": "[Values and Variables](slides/values-variables.pdf)",
-        "materials": ["[ITCS - Simple Data](http://interactivepython.org/runestone/static/thinkcspy/SimplePythonData/toctree.html)", "IP 2"],
+        "materials": ["[ITCS - Simple Data](http://interactivepython.org/runestone/static/thinkcspy/SimplePythonData/toctree.html)", "TP 2"],
         "order": [3]
     },
     "data-structures": {
         "topic": "[Data Structures](slides/data-structures.pdf)",
-        "materials": ["[ITCS - Lists](http://interactivepython.org/runestone/static/thinkcspy/Lists/toctree.html)", "[ITCS - Dictionaries](http://interactivepython.org/runestone/static/thinkcspy/Dictionaries/toctree.html)", "IP 2-3"],
+        "materials": ["[ITCS - Lists](http://interactivepython.org/runestone/static/thinkcspy/Lists/toctree.html)", "[ITCS - Dictionaries](http://interactivepython.org/runestone/static/thinkcspy/Dictionaries/toctree.html)", "TP 10,11,12"],
         "order": [4]
     },
     "strings": {
@@ -29,22 +29,22 @@
     "control-structures": {
         "topic": "[Control Structures](slides/control-structures.pdf)",
         "materials": ["[ITCS - Selection](http://interactivepython.org/runestone/static/thinkcspy/Selection/toctree.html)",
-                      "[ITCS - Iteration](http://interactivepython.org/runestone/static/thinkcspy/MoreAboutIteration/toctree.html)", "IP 4","Exercise: [grades.py](exercises/grades.py)"],
+                      "[ITCS - Iteration](http://interactivepython.org/runestone/static/thinkcspy/MoreAboutIteration/toctree.html)", "TP 5, 7","Exercise: [grades.py](exercises/grades.py)"],
         "order": [5]
     },
     "functions": {
         "topic": "[Functions](slides/functions.pdf)",
-        "materials": ["[ITCS - Functions](http://interactivepython.org/runestone/static/thinkcspy/Functions/toctree.html)", "[ITCS - Turtles](http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/toctree.html)", "IP 4"],
+        "materials": ["[ITCS - Functions](http://interactivepython.org/runestone/static/thinkcspy/Functions/toctree.html)", "[ITCS - Turtles](http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/toctree.html)", "TP 3"],
         "order": [6]
     },
     "modules-programs": {
         "topic": "[Modules and Programs](slides/modules-programs.pdf)",
-        "materials": ["[ITCS - Modules](http://interactivepython.org/runestone/static/thinkcspy/PythonModules/toctree.html)", "IP 6", "[hanglib](code/hanglib/)", "Exercise: [Hangman](exercises/hangman.html)"],
+        "materials": ["[ITCS - Modules](http://interactivepython.org/runestone/static/thinkcspy/PythonModules/toctree.html)", "TP 1,14", "[hanglib](code/hanglib/)", "Exercise: [Hangman](exercises/hangman.html)"],
         "order": [7]
     },
     "functional-programming": {
         "topic": "[Functional programming](slides/functional-programming.pdf)",
-        "materials": [""],
+        "materials": ["TP 19"],
         "order": [8]
     },
     "data-representation": {
@@ -54,7 +54,8 @@
     },
     "classes-objects": {
         "topic": "[Classes and Objects](slides/classes-objects.pdf)",
-        "materials": ["[ITCS - Classes and Objects](http://interactivepython.org/runestone/static/thinkcspy/ClassesBasics/toctree.html)", "[OOP Code](https://github.com/cs2316/cs2316.github.io/tree/master/code/classes)"],
+        "materials": ["[ITCS - Classes and Objects](http://interactivepython.org/runestone/static/thinkcspy/ClassesBasics/toctree.html)", "[OOP Code](https://github.com/cs2316/cs2316.github.io/tree/master/code/classes)",
+                     "TP 15 - 18"],
         "order": [9]
     },
     "review1": {
