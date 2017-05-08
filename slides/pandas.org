@@ -15,6 +15,7 @@
 #+LaTeX_HEADER: \lstset{frame=tb, aboveskip=1mm, belowskip=0mm, showstringspaces=false, columns=flexible, basicstyle={\scriptsize\ttfamily}, numbers=left, frame=single, breaklines=true, breakatwhitespace=true}
 #+LaTeX_HEADER: \setbeamertemplate{footline}[frame number]
 #+LaTeX_HEADER: \hypersetup{colorlinks=true,urlcolor=blue}
+#+LaTeX_HEADER: \logo{\includegraphics[height=.75cm]{GeorgiaTechLogo-black-gold.png}}
 
 * Pandas
 
@@ -79,7 +80,9 @@ Out[24]:
 134     87.0
 dtype: float64
 #+END_SRC
+
 or
+
 #+BEGIN_SRC python
 In [25]: pd.Series(open('exam1grades.txt').readlines())
 Out[25]:
@@ -92,12 +95,12 @@ dtype: object
 #+END_SRC
 
 ... but not an indefinite sequence:
+
 #+BEGIN_SRC python
 In [26]: pd.Series(open('exam1grades.txt'))
 ...
 TypeError: object of type '_io.TextIOWrapper' has no len()
 #+END_SRC
-
 
 ** Series from Dictionary
 
@@ -112,6 +115,7 @@ salary = {"Data Scientist": 110000,
           "Supply Chain Manager": 100000}
 #+END_SRC
 Create a ~pd.Series~ from a ~dict~: [fn:1]
+
 #+BEGIN_SRC python
 In [14]: salary_data = pd.Series(salary)
 
@@ -131,7 +135,6 @@ dtype: int64
 The index is a sorted sequence of the keys of the dictionary passed to ~pd.Series~
 
 [fn:1] [[https://www.glassdoor.com/List/Best-Jobs-in-America-LST_KQ0,20.htm][https://www.glassdoor.com/List/Best-Jobs-in-America-LST_KQ0,20.htm]]
-
 
 ** Series with Custom Index
 

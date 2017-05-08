@@ -15,7 +15,7 @@
 #+LaTeX_HEADER: \lstset{frame=tb, aboveskip=1mm, belowskip=0mm, showstringspaces=false, columns=flexible, basicstyle={\scriptsize\ttfamily}, numbers=left, frame=single, breaklines=true, breakatwhitespace=true}
 #+LaTeX_HEADER: \setbeamertemplate{footline}[frame number]
 #+LaTeX_HEADER: \hypersetup{colorlinks=true,urlcolor=blue}
-
+#+LaTeX_HEADER: \logo{\includegraphics[height=.75cm]{GeorgiaTechLogo-black-gold.png}}
 
 * Introduction to Python
 
@@ -42,7 +42,7 @@ The coolest thing about Python ...
 ** The Python Name
 
 #+BEGIN_CENTER
-#+ATTR_LaTeX: :height .75\textheight
+#+ATTR_LaTeX: :height .6\textheight
 [[file:Flyingcircus_2.jpg]]
 
 [[https://en.wikipedia.org/w/index.php?curid=6130072][https://en.wikipedia.org/w/index.php?curid=6130072]]
@@ -50,7 +50,7 @@ The coolest thing about Python ...
 
 Python was named for Monty Python, of which Python’s creator, Guido van Rossum, is a big fan.
 
-** The `python` Program
+** The ~python~ Program
 
 Practically speaking, Python is a program on your computer that interprets Python programs and statements.
 
