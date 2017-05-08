@@ -3,7 +3,7 @@ layout: sabic
 title: Introduction to Computing with Python
 ---
 
-# Introductoin to Computing with Python
+# Introduction to Computing with Python
 
 ## Instructor
 
