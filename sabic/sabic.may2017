@@ -1,11 +1,11 @@
 Week 1
 2017-05-08;Intro to Computing, [Getting Started](resources.html), intro-python;; [Homework 0 Assigned](may2017/hw0/hw0.html)
-2017-05-10;values-variables, data-structures;; [Homework 0 Due](may2017/hw0/hw0.html), [Homework 1 Assigned](may2017/hw1/hw1-fit.html)
-2017-05-11;functions, Quiz 1
+2017-05-10;values-variables;; [Homework 0 Due](may2017/hw0/hw0.html), [Homework 1 Assigned](may2017/hw1/hw1-fit.html)
+2017-05-11;data-structures,functions
 Week 2
 2017-05-15;control-structures;modules-programs
 2017-05-17;modules-programs;; [Homework 1 Due](may2017/hw1/hw1-fit.html), [Homework 2 Assigned](may2017/hw2/hw2-zipf.html)
-2017-05-19;file-io, functional-programming, Quiz 2
+2017-05-19;file-io, functional-programming, Quiz 1
 Week 3
 2017-05-22;classes-objects;; [Homework 2 Due Tuesday 2017-05-23](may2017/hw2/hw2-zipf.html)
-2017-05-24;classes-objects, Quiz 3
+2017-05-24;classes-objects, Quiz 2
