@@ -18,7 +18,7 @@ Many people who insist on using Windows like [Notepad++](http://notepad-plus-plu
 
 If you're going to get a computer science or engineering degree, you should learn [Emacs](http://www.gnu.org/software/emacs/) or [Vim](http://www.vim.org/), because they can be used in a terminal and are available on every UNIX platform, Windows, and Mac. [Emacs](http://www.gnu.org/software/emacs/) is the most powerful editor in existence, but it has a steep learning curve.
 
-### **Recommendation for new programmers**: [Sublime Text](http://www.sublimetext.com/)
+### **Recommendation for new programmers**: [Sublime Text](sublime.html)
 
 ## TABS Versus Spaces
 
@@ -43,19 +43,6 @@ We suggest that you also:
 - Bind a key combination to automatically indent lines according to the guidelines for whatever language you're editing
 - Bind a key to "go to" a specified line number
 
-
-### Customizing Sublime Text
-
-In Sublime Text's application menu, select the Preferences menu, then click Settings - User. An editor tabe will open with a blank JSON dictionary (curly braces). Replace the empy dictionary with the following and save with File -> Save, or Ctrl-S (Cmd-S on OS X).
-
-```sh
-{
-    "tab_size": 4,
-    "translate_tabs_to_spaces": true,
-    "rulers": [80],
-    "trim_trailing_white_space_on_save": true
-}
-```
 
 ### Customizing Emacs
 
