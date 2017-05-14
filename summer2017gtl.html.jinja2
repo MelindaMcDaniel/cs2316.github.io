@@ -36,7 +36,12 @@ title: CS 2316 - Summer 2017 GTL
     {% else %}
     <tr>
       <td>{{row["date"]}}</td>
-      <td>{{(row["topic"]|markdown).replace("<p>","").replace("</p>","")}}</td>
+      <td>
+        {% for item in row["topics"][:-1] %}
+        {{(item|markdown).replace("<p>","").replace("</p>","")}}<br/>
+        {% endfor %}
+        {{(row["topics"][-1]|markdown).replace("<p>","").replace("</p>","")}}
+      </td>
       <td>
         {% for item in row["materials"][:-1] %}
         {{(item|markdown).replace("<p>","").replace("</p>","")}}<br/>
