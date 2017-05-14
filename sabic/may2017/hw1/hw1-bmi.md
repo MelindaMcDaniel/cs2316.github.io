@@ -118,7 +118,7 @@ def is_overwieght(weight, height):
 
 def is_underweight(weight, height):
     """Answer whether the given weight and height is considered overweight
-    by government standards (BMI > 25).
+    by government standards (BMI < 18.5).
 
     Paramters:
     weight: float -- weight in kilograms
