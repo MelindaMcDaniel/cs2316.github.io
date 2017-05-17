@@ -112,9 +112,9 @@ Example:
 
 #+BEGIN_SRC python
 if (num % 2) == 0:
-print("I like " + str(num))
+    print("I like " + str(num))
 else:
-print("I'm ambivalent about " + str(num))
+    print("I'm ambivalent about " + str(num))
 #+END_SRC
 
 ** Blocks
