@@ -16,7 +16,7 @@ Try to do the following before the first day of class.
 ```sh
 $ conda update conda
 $ conda install requests beautifulsoup4 sqlite pyqt ipython numpy pandas matplotlib jupyter
-$ conda install scipy scikit-learn
+$ conda install statsmodels scipy scikit-learn
 ```
 
 For this class you don't technically need the third line above, but these are common packages used in data analytics, which is a major application area for Python. We may discuss some of these as special topics during the last week of the course.
@@ -43,7 +43,9 @@ In this class we will use the terminal, the Python REPLs (`python` and `ipython`
 ## Learn About Programming and Computing
 
 - [Basic Unix](http://matt.might.net/articles/basic-unix/) - a tutorial introduction to the Unix command line
-that will give you the basic skills you need for this class should you choose to use a unix-like operating system like Ubuntu Linux or Mac OS X
+that will give you the basic skills you need for this class should you choose to use a unix-like operating system like Linux or Mac OS X
+- [Windows command line tutorial](https://www.computerhope.com/issues/chusedos.htm)
+- [Windows command line reference)(https://technet.microsoft.com/en-us/library/bb490890.aspx)
 - [Text Editors](text-editors.html) - an intro to text editors for beginning programmers
 
 ## Learn About Python
