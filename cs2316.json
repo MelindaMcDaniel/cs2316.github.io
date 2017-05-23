@@ -15,7 +15,7 @@
     },
     "values-variables": {
         "topic": "[Values and Variables](slides/values-variables.pdf)",
-        "materials": ["[ITCS - Simple Data](http://interactivepython.org/runestone/static/thinkcspy/SimplePythonData/toctree.html)", "TP 2"],
+        "materials": ["[ITCS - Simple Data](http://interactivepython.org/runestone/static/thinkcspy/SimplePythonData/toctree.html)", "TP 2", "[Video: Values and Variables](https://youtu.be/iKG_hAXy0qQ)"],
         "order": [3]
     },
     "data-structures": {
