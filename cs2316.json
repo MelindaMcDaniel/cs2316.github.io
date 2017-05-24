@@ -20,7 +20,7 @@
     },
     "data-structures": {
         "topic": "[Data Structures](slides/data-structures.pdf)",
-        "materials": ["[ITCS - Lists](http://interactivepython.org/runestone/static/thinkcspy/Lists/toctree.html)", "[ITCS - Dictionaries](http://interactivepython.org/runestone/static/thinkcspy/Dictionaries/toctree.html)", "TP 10,11,12"],
+        "materials": ["[ITCS - Lists](http://interactivepython.org/runestone/static/thinkcspy/Lists/toctree.html)", "[ITCS - Dictionaries](http://interactivepython.org/runestone/static/thinkcspy/Dictionaries/toctree.html)", "TP 10,11,12", "[Video: Data Structures](https://youtu.be/TtAQxtgPOwI)"],
         "order": [4]
     },
     "strings": {
