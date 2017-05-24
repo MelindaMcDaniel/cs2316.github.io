@@ -1,5 +1,5 @@
 ---
-layout: homework
+layout: sabic-homework
 title: Extra Credit 1 - Fit
 ---
 
