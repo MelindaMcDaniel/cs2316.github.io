@@ -59,7 +59,7 @@ def time_seconds(time):
     """Take a time in MM:SS format and return the corresponding number of seconds
 
     Parameters:
-    time: str -- time in MM:SS format
+    time: str -- time in MM:SS format, where MM are minutes, SS are seconds
 
     Return:
     int -- number of seconds of a time specified in MM:SS format
@@ -67,6 +67,24 @@ def time_seconds(time):
     Usage Examples:
     >>> time_seconds("2:30")
     150
+    >>> time_seconds("10:15")
+    615
+    """
+
+def day_from(today, interval):
+    """Caclulate the day of the week interval days from today.
+
+    Parameters:
+    today: int -- 0 means Monday, 1 means Tuesday, ..., 6 means Sunday
+
+    Return:
+    int -- the numeric code for the day of the week interval days from today
+
+    Usage Examples:
+    >>> day_from(0, 8)
+    1
+    >>> day_from(3, 20)
+    2
     """
 
 def score(entry):
