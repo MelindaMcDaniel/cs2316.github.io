@@ -23,13 +23,13 @@ You are an Intro to Computing student who needs to install Python, configure it 
 
 - Download and install Python 3 on your computer and configure your sytem so you can run Python from the command line. See the instructions on the class web site's Resources page.
 - Download and install a programmer's text editor.  You may end up trying out several over the course of the semester before you settle on one. See the Text Editors guide on the class web site's Resources page.
-- Create a directory for your computing coursework somewhere on your hard disk.  We suggest `sabic-computing`.  Note: avoid putting spaces in file and directory names, since doing so complicates the use of some command line tools.
+- Create a directory for your computing coursework somewhere on your hard disk.  We suggest `cs2316`.  Note: avoid putting spaces in file and directory names, since doing so complicates the use of some command line tools.
 - Create a `hw0` subdirectory of your CS 2316 coursework directory for your HW0 solution.
 
 On Unix/BASH you can create both of these directories at once with
 
 ```sh
-$ mkdir -p sabic-computing/hw0
+$ mkdir -p cs2316/hw0
 ```
 
 Windows uses the same commands for directory navigation and creation, `cd` and `mkdir`, but Windows's `mkdir` command doesn't have the `-p` option.
