@@ -31,7 +31,7 @@
     "control-structures": {
         "topic": "[Control Structures](slides/control-structures.pdf)",
         "materials": ["[ITCS - Selection](http://interactivepython.org/runestone/static/thinkcspy/Selection/toctree.html)",
-                      "[ITCS - Iteration](http://interactivepython.org/runestone/static/thinkcspy/MoreAboutIteration/toctree.html)", "TP 5, 7","Exercise: [grades.py](exercises/grades.py)"],
+                      "[ITCS - Iteration](http://interactivepython.org/runestone/static/thinkcspy/MoreAboutIteration/toctree.html)", "TP 5, 7","Exercise: [Grades Module](exercises/grades.md)"],
         "order": [5]
     },
     "functions": {
