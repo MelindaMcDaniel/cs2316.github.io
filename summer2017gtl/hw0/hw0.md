@@ -39,10 +39,12 @@ Note: the `$` is the command prompt on most Unix shells and Windows 10's Ubuntu 
 - On the command line, go to the `hw0` directory you just created and enter these commands:
 
 ```sh
-$ python3 --version > hw0-output.txt
+$ python3 --version 2> hw0-output.txt
 ```
 
-`>` redirects the output of a program, in this case to the `hw0-output.txt` file. Important note: if the line above doesn't write your Python version to the `hw0-output.txt` file then replace the `>` with `2>` and try again. Some versions of Python, such as the one installed by Anaconda and miniconda, write the Python version to `stderr` instead of `stdout`. `>` redirects `stdout` and `2>` redirects `stderr`. For more informaiton,  [this blog post](http://www.jstorimer.com/blogs/workingwithcode/7766119-when-to-use-stderr-instead-of-stdout) has a nice discussion of the file descriptors `stdin`, `stdout` and `stderr`.
+`>` redirects the output of a program's `stdout`, which is connected to the console by default. Some versions of Python, such as the one installed by Anaconda and miniconda, write the Python version string to `stderr` instead of `stdout` because the version string is considered "diagnostic" information. `stderr` is also connected to the console by default so it's not obvous which file handle Python is using to report its version string. `>` redirects `stdout` and `2>` redirects `stderr`. The important point here is that after you run the command above, ensure that your `hw0-output.txt` file contains your Python version string. If it does not, run the command above again using the redirect for `stdout`, that is, `>` instead of `2>`.
+
+For more informaiton,  [this blog post](http://www.jstorimer.com/blogs/workingwithcode/7766119-when-to-use-stderr-instead-of-stdout) has a nice discussion of the file descriptors `stdin`, `stdout` and `stderr`.
 
 - Open your text editor, create a file in your newly created `hw0` directory named `nimbly_bimbly.py` and save the following Python program in the file:
 
@@ -52,8 +54,9 @@ print("...")
 print("\u004D\u0065\u006F\u0077\u0021")
 ```
 - In your OS command shell, `cd` to your `hw0` directory and enter `python3 nimbly_bimbly.py` to run the program and see its output on the command line.
-- Add the output of your program to `hw0-output.txt` by running\\
+- Add the output of `nimbly_bimbly.py` to `hw0-output.txt` by running
   `python3 nimbly_bimbly.py >> hw0-output.txt`. Don't forget the extra `>` in `>>`. `>>` appends to an existing file, a single `>` overwrites an existing file.
+- Ensure that your `hw0-output.txt` file contains both your Python version string, and the output of `nimbly_bimbly.py`.
 
 
 ## Turn-in Procedure
