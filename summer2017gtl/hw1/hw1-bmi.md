@@ -117,7 +117,7 @@ def is_overwieght(weight, height):
     """
 
 def is_underweight(weight, height):
-    """Answer whether the given weight and height is considered overweight
+    """Answer whether the given weight and height is considered underweight
     by government standards (BMI < 18.5).
 
     Paramters:
@@ -125,7 +125,7 @@ def is_underweight(weight, height):
     height: float -- height in meters
 
     Return:
-    bool: True if BMI for weight and height is greater than 25, False otherwise
+    bool: True if BMI for weight and height is less than 18.5, False otherwise
 
     Usage examples:
     >>> is_underweight(54, 1.72)
