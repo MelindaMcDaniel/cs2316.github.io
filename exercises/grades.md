@@ -34,10 +34,10 @@ Write a module named `grades` with the following functions:
 
 - `grades_lists(grades)`, which takes a grades list as specified above and creates a `dict[str, list[float]]` mapping names to lists of grades.
 
-- `grades_dicts(grades)`, which takes a grades list as specified above and creates a `dict[str, dict[str, float]]` mapping names to dicitonaries of grades.
+- `grades_dicts(grades)`, which takes a grades list as specified above and creates a `dict[str, dict[str, float]]` mapping names to dictionaries of grades.
 
 - `averages(grades)`, which takes a `dict[str, list[float]]` mapping names to lists of grades and creates a dict mapping names to grade averages.
 
 - `item_mean(grades, item)`, which takes a `dict[str, dict[str, float]]` and create a `dict[str, float]` mapping items to average for that `item` across all students.
 
-- `rank(grades, item)`, which takes a `dict[str, dict[str, float]]` mapping names to dicts of grades and returns a `list[tuple[str, float]]` of (student, grade) pairs where `grade` is the grade for `sutdent` on `item`, sorted in descending order by the grades.
+- `rank(grades, item)`, which takes a `dict[str, dict[str, float]]` mapping names to dicts of grades and returns a `list[tuple[str, float]]` of (student, grade) pairs where `grade` is the grade for `student` on `item`, sorted in descending order by the grades.
