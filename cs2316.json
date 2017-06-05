@@ -57,12 +57,14 @@
     "classes-objects": {
         "topic": "[Classes and Objects](slides/classes-objects.pdf)",
         "materials": ["[ITCS - Classes and Objects](http://interactivepython.org/runestone/static/thinkcspy/ClassesBasics/toctree.html)", "[OOP Code](https://github.com/cs2316/cs2316.github.io/tree/master/code/classes)",
-                     "TP 15 - 18"],
+                      "TP 15 - 18",
+                     "[Exercise: Treating People as Objects](exercises/people-objects.html)"],
         "order": [9]
     },
     "review1": {
         "topic": "Review 1",
-        "materials": ["[Treating People as Objects](exercises/people-objects.html)"],
+        "materials": ["[cs2316-exam1-practice.pdf](cs2316-exam1-practice.pdf)",
+                      "[cs2316-exam1-practice-answers.pdf](cs2316-exam1-practice-answers.pdf)"],
         "order": [10]
     },
     "exam1": {
@@ -135,13 +137,13 @@
     },
     "review2": {
         "topic": "Review 2",
-        "materials": [""],
+        "materials": ["[cs2316-exam2-practice.pdf](cs2316-exam2-practice.pdf)",
+                      "[cs2316-exam2-practice-answers.pdf](cs2316-exam2-practice-answers.pdf)"],
         "order": [23]
     },
     "exam2": {
         "topic": "**Exam 2**",
-        "materials": ["[cs2316-exam2-practice.pdf](cs2316-exam2-practice.pdf)",
-                      "[cs2316-exam2-practice-answers.pdf](cs2316-exam2-practice-answers.pdf)"],
+        "materials": [""],
         "order": [24]
     },
     "pq2": {
@@ -171,13 +173,14 @@
     },
     "review3": {
         "topic": "[Review 3](slides/review3.pdf)",
-        "materials": [""],
+        "materials": ["[cs2316-exam3-practice.pdf](cs2316-exam3-practice.pdf)",
+                     "[cs2316-exam3-practice-answers.pdf](cs2316-exam3-practice-answers.pdf)"],
+
         "order": [32]
     },
     "exam3": {
         "topic": "**Exam 3**",
-        "materials": ["[cs2316-exam3-practice.pdf](cs2316-exam3-practice.pdf)",
-                     "[cs2316-exam3-practice-answers.pdf](cs2316-exam3-practice-answers.pdf)"],
+        "materials": [""],
         "order": [33]
     },
     "pq3": {

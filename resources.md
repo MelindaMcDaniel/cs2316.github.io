@@ -45,7 +45,7 @@ In this class we will use the terminal, the Python REPLs (`python` and `ipython`
 - [Basic Unix](http://matt.might.net/articles/basic-unix/) - a tutorial introduction to the Unix command line
 that will give you the basic skills you need for this class should you choose to use a unix-like operating system like Linux or Mac OS X
 - [Windows command line tutorial](https://www.computerhope.com/issues/chusedos.htm)
-- [Windows command line reference)(https://technet.microsoft.com/en-us/library/bb490890.aspx)
+- [Windows command line reference](https://technet.microsoft.com/en-us/library/bb490890.aspx)
 - [Text Editors](text-editors.html) - an intro to text editors for beginning programmers
 
 ## Learn About Python

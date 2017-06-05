@@ -14,12 +14,12 @@ Week 2
 Week 3
 2017-05-29; functions;;[HW1 Assigned](summer2017gtl/hw1/hw1-bmi.html)
 2017-05-30; modules-programs;;[HW0 Due](summer2017gtl/hw0/hw0.html)
-2017-05-31; control-structures
-2017-06-01; functional-programming
-2017-06-02; functional-programming
+2017-05-31; modules-programs
+2017-06-01; control-structures
+2017-06-02; control-structures
 Week 4
 2017-06-05; No Class
-2017-06-06; classes-objects;;[HW2 Assigned](summer2017gtl/hw2/hw2-zipf.html)
+2017-06-06; functional-programming;;[HW2 Assigned](summer2017gtl/hw2/hw2-zipf.html)
 2017-06-07; classes-objects;;[HW1 Due](summer2017gtl/hw1/hw1-bmi.html)
 2017-06-08; review1
 2017-06-09; **Exam 1**
@@ -27,8 +27,8 @@ Block 2: Data: Formats, Storage and Retrieval
 Week 5
 2017-06-12; file-io
 2017-06-13; data-exchange-formats
-2017-06-14; data-exchange-formats
-2017-06-15; data-exchange-formats
+2017-06-14; data-exchange-formats;;[HW2 Due](summer2017gtl/hw2/hw2-zipf.html)
+2017-06-15; data-exchange-formats;;[HW3 Assigned](summer2017gtl/hw3/hw3-french-verbs.html)
 2017-06-16; No Class
 Week 6
 2017-06-19; No Class
@@ -40,7 +40,7 @@ Week 7
 2017-06-26; html
 2017-06-27; Field Trip
 2017-06-28; regular-expressions
-2017-06-29; web-scraping
+2017-06-29; web-scraping;;[HW3 Due](summer2017gtl/hw3/hw3-french-verbs.html)
 2017-06-30; web-scraping
 Week 8
 2017-07-03; No Class

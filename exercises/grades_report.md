@@ -28,4 +28,4 @@ from the student grades in a CSV file such as [grades.csv](grades.csv). Your pro
 
 ## Tips and Considerations
 
-Some of this should be [familiar](grades.py).
+Some of this should be [familiar](grades.md).

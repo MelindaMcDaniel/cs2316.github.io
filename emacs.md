@@ -1,6 +1,6 @@
 # Emacs
 
-Emacs is the most powerful editor in existence. I don't say this as a joke. Emacs has a learning curve that you may not want to incur while you're also learning a new programming language, but I highly recommend taking the time to get started with Emacs the next time you have a break from school. Here are a few good resources:
+Emacs is the most powerful editor in existence. I don't say this as a joke. Emacs has a learning curve that you may not want to climb while you're also learning a new programming language, but I highly recommend taking the time to get started with Emacs the next time you have a break from school. Here are a few good resources:
 
 
 ## Customizing Emacs
