@@ -64,7 +64,8 @@
     "review1": {
         "topic": "Review 1",
         "materials": ["[cs2316-exam1-practice.pdf](cs2316-exam1-practice.pdf)",
-                      "[cs2316-exam1-practice-answers.pdf](cs2316-exam1-practice-answers.pdf)"],
+                      "[cs2316-exam1-practice-answers.pdf](cs2316-exam1-practice-answers.pdf)",
+                     "[Exam 1 Practice Problems](exercises/exam1-practice.html)"],
         "order": [10]
     },
     "exam1": {
