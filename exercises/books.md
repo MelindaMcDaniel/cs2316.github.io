@@ -15,7 +15,7 @@ You're developing a book selling web site. You receive book data in XML format, 
 
 ## Solution Description
 
-Write a module called `books_queries.py` with the following functions:
+Write a module called `books.py` with the following functions:
 
 ```Python
 def titles(books):
