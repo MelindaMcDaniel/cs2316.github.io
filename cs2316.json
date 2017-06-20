@@ -89,6 +89,20 @@
         "materials": ["IP 8", "Exercise: [Student Emails](exercises/student-emails.html) ([Sample Answer](exercises/student_emails.py))", "Exercise: [Tides](exercises/tides.html)", "Exercise: [Grades Report](exercises/grades_report.html)"],
         "order": [13]
     },
+    "xml": {
+        "topic": "[Data Exchange Formats](slides/xml.pdf)",
+        "materials": ["IP 8", "[XML Details](slides/xml-details.pdf)",
+                      "[Python XML and Database APIs](slides/python-xml-database.pdf)",
+                      "[people.xml](code/structured-files/people.xml)",
+                      "Exercise: [Books](exercises/books.html)"],
+        "order": [14,15]
+    },
+    "json": {
+        "topic": "[Data Exchange Formats](slides/json.pdf)",
+        "materials": ["[JSON Spec](http://json.org/)"],
+        "order": [16]
+    },
+
     "data-exchange-formats": {
         "topic": "[Data Exchange Formats](slides/data-exchange-formats.pdf)",
         "materials": ["IP 8", "[XML](slides/xml.pdf)",
@@ -96,7 +110,7 @@
                       "[JSON Spec](http://json.org/)",
                       "[people.xml](code/structured-files/people.xml)",
                       "Exercise: [Books](exercises/books.html)"],
-        "order": [14]
+        "order": [100]
     },
     "web-services": {
         "topic": "[Web Services](slides/web-services.pdf)",
