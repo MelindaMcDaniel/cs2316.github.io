@@ -87,7 +87,7 @@ Notice that some verbs don't have conjugations in the conjugations file. For ver
 
 ## Submission Instructions
 
-Attach your `verb-consolidator.py` file to your T-Square HW2 assignment submission.
+Attach your `french_verb.py` file to your T-Square HW3 assignment submission.
 
 ## Verify Your T-Square Submission!
 
