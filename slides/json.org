@@ -57,30 +57,55 @@ Just like Python data structures but you have to use double quotes for strings. 
 }
 #+END_SRC
 
-** Processing JSON
+** Reading JSON
 
 Use Python's built-in [[https://docs.python.org/3/library/json.html][JSON encoder and decoder]]
 
 - Loading from a string:
 
 #+BEGIN_SRC python
-
+In [2]: json.loads('{"CS4400": ["CS1301","CS1315","CS1371"], "CS3600":["CS1332"]}')
+Out[2]: {'CS3600': ['CS1332'], 'CS4400': ['CS1301', 'CS1315', 'CS1371']}
 #+END_SRC
 
-- Loading from a file:
+- Loading from a file (notice that you must provide a file object, not just a file name):
 
 #+BEGIN_SRC python
+In [8]: cat fall2017-breaks.json
+{
+    "2017-09-04": "Labor Day",
+    "2017-10-09": "Fall Student Recess",
+    "2017-10-09": "Fall Student Recess",
+    "2017-11-22": "Student Recess",
+    "2017-11-23": "Thanksgiving Break",
+    "2017-11-24": "Thanksgiving Break"
+}
 
+In [9]: json.load(open('fall2017-breaks.json'))
+Out[9]:
+{'2017-09-04': 'Labor Day',
+ '2017-10-09': 'Fall Student Recess',
+ '2017-11-22': 'Student Recess',
+ '2017-11-23': 'Thanksgiving Break',
+ '2017-11-24': 'Thanksgiving Break'}
 #+END_SRC
+
+** Writing JSON
 
 - Dumping to a string
 
 #+BEGIN_SRC python
+In [11]: prereqs = {'CS3600': ['CS1332'], 'CS4400': ['CS1301', 'CS1315', 'CS1371']}
 
+In [12]: json.dumps(prereqs)
+Out[12]: '{"CS3600": ["CS1332"], "CS4400": ["CS1301", "CS1315", "CS1371"]}'
 #+END_SRC
 
-- Dumping to a file:
+- Dumping to a file (notice the write-mode file object):
 
 #+BEGIN_SRC python
+In [14]: json.dump(prereqs, open('prereqs.json', 'wt'))
 
+In [15]: cat prereqs.json
+{"CS3600": ["CS1332"], "CS4400": ["CS1301", "CS1315", "CS1371"]}
 #+END_SRC

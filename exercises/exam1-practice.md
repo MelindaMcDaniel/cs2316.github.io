@@ -25,7 +25,7 @@ Your program should support at least the operators `+`, `-`, `*`, `/`.
 
 - Write a single expression that takes a list of strings like `["Germany:Berlin", "France:Paris", "England:London"]` and returns a dictionary like  `{'Germany': 'Berlin', 'France': 'Paris', 'England': 'London'}`
 
-- Assuming `emails = ["abdallah@hotmail.com", "bob@aol.com", "chen@gmail.com",  "dhruv@bob.aol.com"]` has been executed, replace the following snippet of code with a single line that uses a list comprehension, filling in CONDITION with an expression that evaluates to `True` if the email is an `aol.com` email address.
+- Assuming `emails = ["abdallah@hotmail.com", "bob@aol.com", "chen@gmail.com",  "dhruv@aol.com"]` has been executed, replace the following snippet of code with a single line that uses a list comprehension, filling in CONDITION with an expression that evaluates to `True` if the email is an `aol.com` email address.
 
 ```Python
 retro_chic = []
