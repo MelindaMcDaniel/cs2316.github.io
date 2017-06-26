@@ -62,7 +62,9 @@ As a first step you decide to write a Python program to consolidate your XML and
    "Impératif Présent": ["je ...", "tu ...", "il ...", "nous ...", "vous ...", "ils ..."],
    "Infinitif Présent": ["je ...", "tu ...", "il ...", "nous ...", "vous ...", "ils ..."],
    "Participe Présent": ["je ...", "tu ...", "il ...", "nous ...", "vous ...", "ils ..."],
-   "Participe Passé": ["je ...", "tu ...", "il ...", "nous ...", "vous ...", "ils ..."],
+   "Participe Passé": ["je ...", "tu ...", "il ...", "nous ...", "vous ...", "ils ..."]
+   }
+}
 ```
 
 2. Make your `french_verb` module executable so that when run from the command line the first command line argument to the script is the verb for which to get info, whcih is then printed to the console.
@@ -84,6 +86,10 @@ $ python french_verb.py abaisser
 ```
 
 Notice that some verbs don't have conjugations in the conjugations file. For verbs without conjugations it's fine to return an empty `dict`, as in the example above for abaisser.
+
+### Tips
+
+- Look at the [JSON library documentation](https://docs.python.org/3/library/json.html) for the `ensure_ascii` keyword argument to `dump` and `dumps`. We're all grown ups in the year 2017 here. We all use UTF-8. We don't need to make our strings safe for the [Commodore Vic-20](https://en.wikipedia.org/wiki/Commodore_VIC-20). If you're getting weird-looking output, set this argument appropriately.
 
 ## Submission Instructions
 
