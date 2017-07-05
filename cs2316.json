@@ -145,6 +145,12 @@
                      "Exercise: [Pubs Queries](exercises/pubs-queries.sql)"],
         "order": [21,22]
     },
+    "sql-ddl": {
+        "topic": "[SQL DDL](http://csimpkins.github.io/databases/slides/sql-ddl.pdf)",
+        "materials": ["Exercise: [Registration Database](exercises/registration-database.html)",
+                     "Exercise: [Pubs Queries](exercises/pubs-queries.sql)"],
+        "order": [21,22]
+    },
     "python-xml-databases": {
         "topic": "[Python XML and Database APIs](slides/python-xml-database.pdf)",
         "materials": [""],
