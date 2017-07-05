@@ -91,7 +91,9 @@
     },
     "xml": {
         "topic": "[Data Exchange Formats](slides/xml.pdf)",
-        "materials": ["IP 8", "[XML Details](slides/xml-details.pdf)",
+        "materials": ["IP 8",
+                      "[Python ElementTree API](https://docs.python.org/3/library/xml.etree.elementtree.html)",
+                      "[XML Details](slides/xml-details.pdf)",
                       "[Python XML and Database APIs](slides/python-xml-database.pdf)",
                       "[people.xml](code/structured-files/people.xml)",
                       "Exercise: [Books](exercises/books.html)"],

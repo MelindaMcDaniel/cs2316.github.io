@@ -89,6 +89,8 @@ Notice that some verbs don't have conjugations in the conjugations file. For ver
 
 ### Tips
 
+- Some of the information you need to extract from the XML is stored in attributes, not element text. See the [Python ElementTree API](https://docs.python.org/3/library/xml.etree.elementtree.html) to learn how to extract attribute values from XML elements.
+
 - Look at the [JSON library documentation](https://docs.python.org/3/library/json.html) for the `ensure_ascii` keyword argument to `dump` and `dumps`. We're all grown ups in the year 2017 here. We all use UTF-8. We don't need to make our strings safe for the [Commodore Vic-20](https://en.wikipedia.org/wiki/Commodore_VIC-20). If you're getting weird-looking output, set this argument appropriately.
 
 ## Submission Instructions
