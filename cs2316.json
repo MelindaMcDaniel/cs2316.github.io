@@ -151,7 +151,24 @@
         "topic": "[SQL DDL](http://csimpkins.github.io/databases/slides/sql-ddl.pdf)",
         "materials": ["Exercise: [Registration Database](exercises/registration-database.html)",
                      "Exercise: [Pubs Queries](exercises/pubs-queries.sql)"],
-        "order": [21,22]
+        "order": [21]
+    },
+    "sql-crud": {
+        "topic": "[SQL CRUD](http://csimpkins.github.io/databases/slides/sql-crud.pdf)",
+        "materials": ["Exercise: [Registration Database](exercises/registration-database.html)",
+                     "Exercise: [Pubs Queries](exercises/pubs-queries.sql)"],
+        "order": [22]
+    },
+    "sql-queries": {
+        "topic": "[SQL Queries](http://csimpkins.github.io/databases/slides/sql-queries.pdf)",
+        "materials": ["Exercise: [Registration Database](exercises/registration-database.html)",
+                     "Exercise: [Exercise: Dorms Queries](exercises/dorms-queries.html)"],
+        "order": [23,24]
+    },
+    "python-db-api": {
+        "topic": "[Python Database API](slides/python-db-api.pdf)",
+        "materials": [""],
+        "order": [25]
     },
     "python-xml-databases": {
         "topic": "[Python XML and Database APIs](slides/python-xml-database.pdf)",
