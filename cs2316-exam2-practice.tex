@@ -133,28 +133,24 @@ In each of the blanks below, write ``T'' if the statement beside the blank is tr
 \part[1] \makebox[.25in]{\hrulefill} Files in Python are buffered, meaning that they are not guaranteed to be completely written to disk until they are successfully closed.\\
 \fi
 
-% 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8<
-% Add these back after Spring 2017
+\ifprintanswers
+\part[1] \underline{ {\bf F} } XML documents are not human-readable.\\
+\else
+\part[1] \makebox[.25in]{\hrulefill} XML documents are not human-readable.\\
+\fi
 
-%% \ifprintanswers
-%% \part[1] \underline{ {\bf F} } XML documents are not human-readable.\\
-%% \else
-%% \part[1] \makebox[.25in]{\hrulefill} XML documents are not human-readable.\\
-%% \fi
+\ifprintanswers
+\part[1] \underline{ {\bf T} } XML documents can be edited with any text editor.\\
+\else
+\part[1] \makebox[.25in]{\hrulefill} XML documents can be edited with any text editor.\\
+\fi
 
-%% \ifprintanswers
-%% \part[1] \underline{ {\bf T} } XML documents can be edited with any text editor.\\
-%% \else
-%% \part[1] \makebox[.25in]{\hrulefill} XML documents can be edited with any text editor.\\
-%% \fi
+\ifprintanswers
+\part[1] \underline{ {\bf T} } The fundamental data abstraction in relational databases is the table.\\
+\else
+\part[1] \makebox[.25in]{\hrulefill} The fundamental data abstraction in relational databases is the table.\\
+\fi
 
-%% \ifprintanswers
-%% \part[1] \underline{ {\bf T} } The fundamental data abstraction in relational databases is the table.\\
-%% \else
-%% \part[1] \makebox[.25in]{\hrulefill} The fundamental data abstraction in relational databases is the table.\\
-%% \fi
-
-% 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8<
 
 \end{parts}
 
@@ -207,28 +203,24 @@ what would it return for the first record?
 \choice {\tt \{None: 'a', None: 'b', None: 'c'\}}
 \end{choices}
 
-% 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8<
-% Add these back after Spring 2017
 
-%% \part[2] Which of the following is {\bf not} well-formed XML?
+\part[2] Which of the following is {\bf not} well-formed XML?
 
-%% \begin{choices}
-%% \choice {\tt <a> <b> c </b> </a>}
-%% \choice {\tt <a> <b> <c/> </b> </a>}
-%% \correctchoice {\tt <a> <b> <c> </b> </a>}
-%% \choice {\tt <a> <b> <c> d </c> </b> </a>}
-%% \end{choices}
+\begin{choices}
+\choice {\tt <a> <b> c </b> </a>}
+\choice {\tt <a> <b> <c/> </b> </a>}
+\correctchoice {\tt <a> <b> <c> </b> </a>}
+\choice {\tt <a> <b> <c> d </c> </b> </a>}
+\end{choices}
 
 
-%% \part[2] A musician can be a member of many bands and a band can have many musicians.  What kind of cardinality relationship exists between musicians and bands?
+\part[2] A musician can be a member of many bands and a band can have many musicians.  What kind of cardinality relationship exists between musicians and bands?
 
-%% \begin{choices}
-%% \choice one to one
-%% \choice one to many
-%% \correctchoice many to many
-%% \end{choices}
-
-% 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8<
+\begin{choices}
+\choice one to one
+\choice one to many
+\correctchoice many to many
+\end{choices}
 
 \end{parts}
 
@@ -275,77 +267,72 @@ fout = open(sys.argv[1] + '.out', 'wt')
 
 \newpage
 
-% 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8<
-% Add these back after Spring 2017
+\question {\bf Short Answer}
 
-%% \question {\bf Short Answer}
+\begin{parts}
 
-%% \begin{parts}
+Given the following table schema for a dive log:
 
-%% Given the following table schema for a dive log:
+\begin{lstlisting}[language=SQL]
+create table dive (
+  timedate datetime, -- the day and start time of the dive
+  duration int, -- duration of the dive from descent to ascent
+  location char(32), -- the location and dive site name
+  buddy char(32),    -- dive buddy
+);
+\end{lstlisting}
 
-%% \begin{lstlisting}[language=SQL]
-%% create table dive (
-%%   datetime text, -- the day and start time of the dive
-%%   duration text, -- duration of the dive from descent to ascent
-%%   location text, -- the location and dive site name
-%%   buddy text,    -- dive buddy
-%% );
-%% \end{lstlisting}
+\part[5] Which field, or fields, would make the best primary key?  Why?
 
-%% \part[5] Which field, or fields, would make the best primary key?  Why?
+\begin{solution}[1in]
+\begin{verbatim}
+timedate should be unique - can't do two dives at once
+\end{verbatim}
+\end{solution}
 
-%% \begin{solution}[1in]
-%% \begin{verbatim}
-%% datetime should be unique - can't do two dives at once
-%% \end{verbatim}
-%% \end{solution}
+Given the following schema:
 
-%% Given the following schema:
+\begin{lstlisting}[language=SQL]
+create table dog (
+    dogid int primary key,
+    name char(32) not null check(name != ''),
+    sex char not null check(sex = 'M' or sex = 'F'),
+    ownerid references owner(ownerid)
+);
 
-%% \begin{lstlisting}[language=SQL]
-%% create table dog (
-%%     dogid integer primary key autoincrement,
-%%     name text not null check(name != ''),
-%%     sex text not null check(sex = 'M' or sex = 'F'),
-%%     ownerid references owner(ownerid)
-%% );
+create table owner (
+    ownerid integer primary key autoincrement,
+    name char(32) not null check(name != '')
+);
+\end{lstlisting}
 
-%% create table owner (
-%%     ownerid integer primary key autoincrement,
-%%     name text not null check(name != '')
-%% );
-%% \end{lstlisting}
+\part[5] Write a {\tt select} statement that will return all the male dogs.
 
-%% \part[5] Write a {\tt select} statement that will return all the male dogs.
+\begin{solution}[1in]
+\begin{verbatim}
+select * from dog where sex = 'M';
+\end{verbatim}
+\end{solution}
 
-%% \begin{solution}[1in]
-%% \begin{verbatim}
-%% select * from dog where sex = 'M';
-%% \end{verbatim}
-%% \end{solution}
+\part[5] Write a {\tt select} statement that will return all the dogs owned by 'Tom'.
 
-%% \part[5] Write a {\tt select} statement that will return all the dogs owned by 'Tom'.
+\begin{solution}[1in]
+\begin{verbatim}
+select * from dog join owner using (ownerid) where owner.name = 'Tom';
+\end{verbatim}
+\end{solution}
 
-%% \begin{solution}[1in]
-%% \begin{verbatim}
-%% select * from dog join owner using (ownerid) where owner.name = 'Tom';
-%% \end{verbatim}
-%% \end{solution}
+\part[5] Write a {\tt select} statement that will return all the dogs whose names start with 'Butter'.
 
-%% \part[5] Write a {\tt select} statement that will return all the dogs whose names start with 'Butter'.
+\begin{solution}[1in]
+\begin{verbatim}
+select * from dog where name like 'Butter%;
+\end{verbatim}
+\end{solution}
 
-%% \begin{solution}[1in]
-%% \begin{verbatim}
-%% select * from dog where name like 'Butter%;
-%% \end{verbatim}
-%% \end{solution}
+\end{parts}
 
-%% \end{parts}
-
-%% \newpage
-
-% 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8<
+\newpage
 
 \question[10] Write Python code that reads a CSV file that uses commas for delimiters, no quote characters and has no header row and stores the data as a list of lists.  For example, for a file like:\\
 
@@ -397,43 +384,37 @@ Or ...
 
 \newpage
 
-% 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8<
-% Add these back after Spring 2017
+\question[10] Write a funtion called {\tt last\_name} that takes an {\tt ElemenetTree} element parameter and returns the text of the {\tt lastName} sub-element of the parameter.  Assume that {\tt xml.etree.ElementTree} has been imported as {\tt et}.
 
+\ifprintanswers
+\begin{lstlisting}[language=Python]
+def last_name(element):
+  return element.find("lastName").text
+\end{lstlisting}
+\fi
 
-%% \question[10] Write a funtion called {\tt last\_name} that takes an {\tt ElemenetTree} element parameter and returns the text of the {\tt lastName} sub-element of the parameter.  Assume that {\tt xml.etree.ElementTree} has been imported as {\tt et}.
+\newpage
 
-%% \ifprintanswers
-%% \begin{lstlisting}[language=Python]
-%% def last_name(element):
-%%   return element.find("lastName").text
-%% \end{lstlisting}
-%% \fi
+\question[10] Write the create statements for a database of employees and departments.  For employees store name, hire date, salary, and department.  For department store the name, description, and the department head, who is an employee.  Add any fields you need for keys and be sure to include foreign keys as necessary.
 
-%% \newpage
+\ifprintanswers
+\begin{lstlisting}[language=SQL]
+create table employee (
+  empid int primary key,
+  name char(32),
+  hiredate date,
+  salary decimal(8,2),
+  dept_id references department(dept_id)
+);
 
-%% \question[10] Write the create statements for a database of employees and departments.  For employees store name, hire date, salary, and department.  For department store the name, description, and the department head, who is an employee.  Add any fields you need for keys and be sure to include foreign keys as necessary.
-
-%% \ifprintanswers
-%% \begin{lstlisting}[language=SQL]
-%% create table employee (
-%%   empid integer primary key,
-%%   name text,
-%%   hiredate text,
-%%   salary float,
-%%   deptid references department(deptid)
-%% );
-
-%% create table department (
-%%   deptid integer primary key,
-%%   name text,
-%%   description text,
-%%   head references employee(empid)
-%% );
-%% \end{lstlisting}
-%% \fi
-
-% 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8< 8<
+create table department (
+  dept_id integer primary key,
+  name char(32),
+  description char(64),
+  head references employee(emp_id)
+);
+\end{lstlisting}
+\fi
 
 
 \end{questions}
