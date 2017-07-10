@@ -127,8 +127,8 @@ All SQL commands and queries must be terminated with a semicolon. Some MySQL don
 
 Download the following files for practice:
 
-- [pubs-schema.sql](pubs-schema.sql)
-- [pubs-data.sql](pubs-data.sql)
+- [pubs-schema.sql](resources/pubs-schema.sql)
+- [pubs-data.sql](resources/pubs-data.sql)
 
 Method 1: redirect input when running mysql client from OS command line
 
