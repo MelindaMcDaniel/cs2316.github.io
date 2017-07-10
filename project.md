@@ -43,7 +43,7 @@ There is a free XML data file containing over 25,000 French verbs called [LVF+1]
 
 The [Écho](http://www.nathan.fr/webapps/cpg2-0/default.asp?idcpg=1000) series of books is designed for French as a foreign language training programs and is used by Alliance Française in the U.S. The A1 level book comes with a DVD that contains MP3 files for all the audio exercises in the book, and a [French-English vocabulary](http://www.nathan.fr/upload/doccpg/038563_lexique-franco-anglais.pdf) is available online.
 
-There are many opportunities for exploiting these data to aid in learning French. One idea is to create a training program that plays an audio file and quizses the user on comprehension and vocabulary. Such a program would need data structures mapping audio files to quiz questions and to vocbulary.
+There are many opportunities for exploiting these data to aid in learning French. One idea is to create a training program that plays an audio file and quizzes the user on comprehension and vocabulary. Such a program would need data structures mapping audio files to quiz questions and to vocbulary.
 
 ### Google Music Utilities
 
