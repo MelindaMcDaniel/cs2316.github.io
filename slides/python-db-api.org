@@ -35,21 +35,44 @@
   >>> import pymysql
   #+END_SRC
 
+Key point: most database APIs, including Python's DB-API, are simply ways of executing SQL statements and getting the results of SQL statements. You can't use DB-API without knowing SQL.
+
 ** Working With Databases
 
-- Connection objects represent a connection to a database
+- A connection objects represent a connection to a database
 
-  – provide transaction methods ~rollback()~ and ~commit()~
-  – provide a cursor object via ~cursor()~ to access the database
+  #+BEGIN_SRC python
+  connection = pymysql.connect(...)
+  #+END_SRC
 
-- Cursor object is a pointer to a part of the database
+- Cursor object is a stateful pointer to a part of the database
 
-  – Connection’s ~cursor()~ method returns a pointer to the database itself on which we can then execute statements
+  #+BEGIN_SRC python
+  cursor = connection.cursor()
+  #+END_SRC
 
-- SQL Statements are submitted to the ~execute()~ method of a database cursor
 
-  – the execute method returns a cursor to its result
-  – If the statement was a select, then the cursor can return the rows as a Python list of tuples via its ~fetchall()~ method or as an iterator over tuples using
+- SQL Statements are submitted to cursor's ~execute()~ method
+
+  – ~execute~ returns the number of rows in the statement's result
+
+    #+BEGIN_SRC python
+    >>> cursor.execute('insert into table values (%s, %s)', ('field1', 'field2'))
+    1
+    #+END_SRC
+
+  – If the statement was a select, then the cursor points at the first row of the result
+
+    - The cursor object is an iterator over the results (preferred method)
+    - ~fetchall()~ , ~fetchone()~ , etc. return results in Python data structures
+
+    #+BEGIN_SRC python
+    >>> cursor.execute('select * from table where column1 = %s', ('field1'))
+    1
+    >>> for row in cursor: print(row)
+    {'column1': 'field1', 'column2': 'field'2'}
+    #+END_SRC
+
 
 ** Connecting to a MySQL Database
 
@@ -65,15 +88,28 @@ If you configured your MySQL server without a root password, this will work:
                                  cursorclass=pymysql.cursors.DictCursor)
 #+END_SRC
 
+- Substitute your own root password if you have one
+- Notice that the cursor class id ~DictCursor~ - pymysql will return rows of dabases as dictionaries
+
+** Inserting Data into a Database Table
+
+#+BEGIN_SRC python
+>>> cursor = connection.cursor()
+>>> cursor.execute('insert into author values (%s, %s, %s)', (10, 'Jenny', 'McCarthy'))
+1
+#+END_SRC
+
+
 ** Executing Queries on a MySQL Database
 
 #+BEGIN_SRC python
 >>> cursor = connection.cursor()
 >>> query = "select * from author where last_name = %s"
 >>> cursor.execute(query, ('McCarthy'))
+2
 >>> for row in cursor: print(row)
-...
 {'author_id': 1, 'first_name': 'John', 'last_name': 'McCarthy'}
+{'author_id': 10, 'first_name': 'Jenny', 'last_name': 'McCarthy'}
 #+END_SRC
 
 - In the query string, use placeholders with same syntax as ~%~ - based string interpolation
