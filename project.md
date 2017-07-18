@@ -13,6 +13,7 @@ Your project must employ most of the following features:
 
 - Data aquisition, either through a (set of) large data file(s) in CSV, XML, or JSON format, or from a network source using web scraping or web services.
 - Transformation of the data or synthesis of information from the data, such as summarizing or correlating data.
+- Storage and/or retrievel of data in an SQL database
 - Display of information through a web or GUI interface.
 
 ## Timeline
@@ -33,9 +34,13 @@ Your project must employ most of the following features:
 
 If you're having trouble coming up with project ideas you may use these directly or as inspiration for your own ideas.
 
+### Train Distances
+
+If you were developing a database system for train reservations in which the price of a trip were based on distance traveled, you might want to store distances in the database. Write a Python script that uses the [Google Maps Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/) to get distances betwen train stations in France and inserts these distances into a database. Your database design should support the calculation of trip distances between any two train stations in the database for which the train stations are connected by railways.
+
 ### Verb Usage Analysis
 
-Verbs play a central role in any language, so mastering a language requires mastering its verbs. In addition to conjugations and imperative forms, French has 14 tenses to convey time and mood, making mastery of French verbs a daunting task. Often a learner wants to know which verbs to learn first. The central idea of this project is to develop a quantitative answer to that question by analyzing French texts and counting the occurences of French verbs so that French verbs can be ranked in order of frequecy of use.
+Verbs play a central role in any language, so mastering a language requires mastering its verbs. In addition to conjugations and imperative forms, French has 14 tenses to convey time and mood, making mastery of French verbs a daunting task. Often a learner wants to know which verbs to learn first, and which tenses to learn first. The central idea of this project is to develop a quantitative answer to that question by analyzing French texts and counting the occurences of French verbs so that French verbs can be ranked in order of frequecy of use.
 
 There is a free XML data file containing over 25,000 French verbs called [LVF+1](http://rali.iro.umontreal.ca/rali/?q=en/node/1238) (Les verves français) and various databases of French texts. A challenge of this project will be recognizing conjugations and tenses of verbs in texts.
 
