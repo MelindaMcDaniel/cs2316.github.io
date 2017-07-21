@@ -186,7 +186,7 @@ Four standard message boxes, invoked with one of these class methods:
 - ~QMessageBox.question~
 - ~QMessageBox.warning~
 
-Arguments are: parent, message box title, message, buttons, and (optional)default button.
+Arguments are: parent, message box title, message, buttons, and (optional) default button.
 
 For example, here's a simple information message box:
 #+BEGIN_SRC python
@@ -195,7 +195,6 @@ reply = QMessageBox.information(main_window,
                                  "The message.",
                                  QMessageBox.Ok)
 #+END_SRC
-
 
 Here's a question:
 
@@ -259,6 +258,7 @@ This is brittle. For example, run [[../code/gui/button.py][message_box.py]] and 
 
 ** Layout Management
 
+Here we use a ~QVBoxLayout~ layout manager to stack widgets vertically:
 
 #+BEGIN_SRC python
 class MainWindow(QWidget):
@@ -280,13 +280,72 @@ class MainWindow(QWidget):
         self.setLayout(self.vbox)
 #+END_SRC
 
+See [[../code/gui/counter.py][counter.py]]
+
 ** Model-View-Controller
+
+*** helloqt.py                                                :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.45
+    :END:
+
+Complex GUI applications organized using MVC pattern:
+
+- *Model* holds the data from the domain model
+- *View* displays information to the user
+- *Controller* coordinates between the model and the view
+
+*** Screenshot :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.45
+    :END:
+
+
+[[file:MVC-process.png]]
+
+
+
+** QListView and QStandardItemModel
+
+In (Py)Qt, as in other GUI frameworks, view and controller are combined.
+
+Here, a ~QListView~ displays the data contained in a ~QStandardItemModel~.
 
 #+BEGIN_SRC python
         self.list_view = QListView()
         self.list_model = QStandardItemModel(self.list_view)
         self.list_view.setModel(self.list_model)
 #+END_SRC
+
+See [[../code/gui/todo.py][todo.py]]
+
+
+** Menus and Toolbars
+
+#+BEGIN_SRC python
+        exit = QAction("Exit", self)
+        exit.setShortcut("Ctrl+Q")
+        exit.setStatusTip("Exit quitter")
+        exit.triggered.connect(qApp.quit)
+
+        menu_bar = self.menuBar()
+        menu_bar.setNativeMenuBar(False)
+
+        file_menu = menu_bar.addMenu("&File")
+        file_menu.addAction(exit)
+#+END_SRC
+
+See [[../code/gui/quitter.py][quitter.py]]
+
+** Standard Dialog Boxes
+
+#+BEGIN_SRC python
+        file_name, filter = \
+            QFileDialog.getOpenFileName(self, "Open file", ".",
+                                        "All files (*);;CSV Files (*.csv)")
+#+END_SRC
+
+See [[../code/gui/csv_gui.py][csv_gui.py]]
 
 ** Examples
 
