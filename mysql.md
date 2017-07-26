@@ -22,6 +22,28 @@ If you run Linux, you already know how to install MySQL. :-)
     $ brew install mysql
     ```
 
+#### Occasional Problem with Homebrew Version of macOS
+
+Every semester a few students do something that causes `mysql.server start` to fail with an error message that looks something like:
+
+```sh
+ERROR! The server quit without updating PID file (/usr/local/var/mysql/username.local.pid).
+```
+
+Here's a brute force fix that seems to work:
+
+1. Uninstall mysql.
+2. Delete the `/usr/local/var/mysql` directory.
+3. Install mysql.
+
+Here's how a shell session executing the steps above might look:
+
+```sh
+$ brew uninstall mysql
+$ sudo rm -rf /usr/local/var/mysql
+$ brew install mysql
+```
+
 ### Windows
 
 1. Download and run the Windows installer from [dev.mysql.com](https://dev.mysql.com/downloads/installer/)
