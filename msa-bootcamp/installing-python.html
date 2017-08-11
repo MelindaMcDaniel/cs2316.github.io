@@ -1,0 +1,45 @@
+---
+layout: msa-bootcamp
+title: Installing Python
+---
+
+<h2>Installing and Configuring Python</h2>
+
+<p>Step 1: Download the latest Python 3 installer for your operating system at <a href="https://www.python.org/downloads/">https://www.python.org/downloads</a></p>
+
+<p>Once Python is intalled, you need to ensure that you can run it from the command line, that is, that the <code>python3</code> executable is on your <code>path</code>.  If you run Linux, you probably don't need help with this.  If you run Mac OS X it just works.  If you run Windows, follow these steps:</p>
+
+<ol>
+<li>Go to the control panel, however you do that on your version of Windows.</li>
+<li>Go to the place for "advanced system settings."  There should be a button labelled "Environment Variables..." -- click on it.</li>
+<li>In the Environment Variables dialog find the <code>Path</code> variable under system variables (not user variables).  Select it and click the Edit.. button below.</li>
+<li>In the Edit dialog box put your cursor at the beginning of the entry (DON'T ERASE ANYTHING!) and type <code>C:\Python34;</code>. The semicolon delimits directory entries in the path.  Click OK.</li>
+<li>If your OS shell was open, close it and re-open it.</li>
+</ol>
+
+Note: these instructions assume that you accepted the defaults when you installed Python.  If you installed Python somethere else, enter that location in place of <code>C:\Python34;</code>.
+
+<h3>Checking Your Python Installation</h3>
+
+<ol>
+<li>Open a terminal, i.e., operating system (OS) command shell.</li>
+<ul>
+<li> The Mac OS X terminal is <code>/Applications/Utilities/Terminal.app</code> in the Finder.  You should drag Terminal to your dock -- you'll use it often.</li>
+<li>On Windows search for and run <code>cmd.exe</code></li>
+</ul>
+<li>At the command prompt type <code>python3 --version</code>.  You should get a response like <code>Python 3.4.0</code>.  Note: on Windows the Python 3 command is just <code>python</code> (without the 3).
+</li>
+</ol>
+
+<h3>The OS Shell Versus the Python Shell</h3>
+
+<p>The prompt for the OS shell typically ends with <code>$</code> on Unix, usually following the form <code>user@computer-name:pwd $</code> where <code>pwd</code> means present working directory.</p>
+
+<p>The prompt for the Python shell is <code>>>></code>, three greater-than symbols.</p>
+
+<h2>Additional Libraries</h2>
+
+<ul>
+<li>If you run on Mac OS X, <a href="http://www.python.org/download/mac/tcltk/"> you will need ActiveTcl as well - read this</a></li>
+<li>Pymysql for Python3 <a href="http://www.summet.com/dmsi/html/pymysql.html#installing-pymysql-for-python3">Installation Instructions</a></li>
+</ul>
