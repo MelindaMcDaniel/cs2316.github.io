@@ -223,14 +223,6 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'False'
 #+END_SRC
 
-** Exercise
-
-Create variables named
-
-- ~exam1~, ~exam2~, and ~exam3~ and assign them literal values,
-- ~exam_avg~ which is assigned the value of an expression computing the average of the exams above, and
-- ~grade_report~, which is a string of the form "Your exam average is X", where X is the value of ~exam_avg~
-
 ** Strings
 
 Three ways to define string literals:
@@ -339,8 +331,6 @@ Note that the result of an index access is a string:
 >>> 'foobar'.find('o')
 1
 #+END_SRC
-
-**Exercise**: using the ~find~ method and string slicing, write an expression that returns the user name from an email address, e.g., "bob@aol.com" => "bob". Do the same for the host name, e.g., "aol.com".
 
 ** Values, Variables, and Expression
 

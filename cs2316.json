@@ -41,7 +41,7 @@
     },
     "modules-programs": {
         "topic": "[Modules and Programs](slides/modules-programs.pdf)",
-        "materials": ["[ITCS - Modules](http://interactivepython.org/runestone/static/thinkcspy/PythonModules/toctree.html)", "TP 1,14", "[hanglib](code/hanglib/)", "Exercise: [Hangman](exercises/hangman.html)"],
+        "materials": ["[ITCS - Modules](http://interactivepython.org/runestone/static/thinkcspy/PythonModules/toctree.html)", "TP 1,14", "[hanglib](code/hanglib/)", "Exercise: [BMI Module](../exercises/bmi.html)", "Exercise: [Hangman](exercises/hangman.html)"],
         "order": [7]
     },
     "functional-programming": {
@@ -193,6 +193,11 @@
         "topic": "**Programming Extra Credit 2**",
         "materials": [""],
         "order": [100]
+    },
+    "data-analytics": {
+        "topic": "[Data Analytics](slides/scipy.pdf)",
+        "materials": [""],
+        "order": [25]
     },
     "ipython": {
         "topic": "[iPython](slides/ipython.pdf)",
