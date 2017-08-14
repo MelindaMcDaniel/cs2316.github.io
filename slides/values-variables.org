@@ -44,6 +44,8 @@ An expression has a value, which is found by evaluating the expression. When you
 
 The expressions above are literal values. A literal is a textual representation of a value in Python source code.
 
+- Do strings always get printed with single quotes even if we diefine them with double quotes?
+
 ** Types
 
 All values have types. Python can tell you the type of a value with the built-in type function:
@@ -56,6 +58,8 @@ All values have types. Python can tell you the type of a value with the built-in
 >>> type("pie")
 <class 'str'>
 #+END_SRC
+
+- What's the type of '1'?
 
 ** The Meaning of Types
 
@@ -74,21 +78,6 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
 #+END_SRC
-
-** Python is Dynamically Typed
-
-Python is dynamically typed, meaning that types are not resoved until run-time. This means two things practically:
-
-1. Values have types, variables don't:
-   #+BEGIN_SRC python
-   >> a = 1
-   >>> type(a)
-   <class 'int'>
-   >>> a = 1.1 # This would not be allowed in a statically typed language
-   >>> type(a)
-   <class 'float'>
-   #+END_SRC
-2. Python doesn't report type errors until run-time. We'll see many examples of this fact.
 
 ** Overloaded Operators
 
@@ -134,9 +123,10 @@ Note that precedence and associativity rules apply to overloaded versions of ope
 #+BEGIN_SRC python
 >>> "Honey" + "Boo" * 2
 'HoneyBooBoo'
->>> ("Honey" + "Boo") * 2
-'HoneyBooHoneyBoo'
 #+END_SRC
+
+- How could we slighlty modify the expression above to evaluate to 'HoneyBooHoneyBoo' ?
+
 
 ** Variables
 
@@ -159,6 +149,22 @@ Variable names, or identifiers, may contain letters, numbers, or underscores and
              ^
 SyntaxError: invalid syntax
 #+END_SRC
+
+** Python is Dynamically Typed
+
+Python is dynamically typed, meaning that types are not resoved until run-time. This means two things practically:
+
+1. Values have types, variables don't:
+   #+BEGIN_SRC python
+   >> a = 1
+   >>> type(a)
+   <class 'int'>
+   >>> a = 1.1 # This would not be allowed in a statically typed language
+   >>> type(a)
+   <class 'float'>
+   #+END_SRC
+2. Python doesn't report type errors until run-time. We'll see many examples of this fact.
+
 
 ** Keywords
 
@@ -183,6 +189,9 @@ as         elif       if         or         yield
 assert     else       import     pass
 break      except     in         raise
 #+END_SRC
+
+- What hapens if you try to use a variable name on the list of keywords?
+- What happens if you use ~print~ as a variable name?
 
 ** Assignment Semantics
 
@@ -223,6 +232,8 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'False'
 #+END_SRC
 
+- What happens if you evaluate the expression ~integer('1')~ ?
+
 ** Strings
 
 Three ways to define string literals:
@@ -253,6 +264,8 @@ I do HTML for them all,
 even made a home page for my dog.
 #+END_SRC
 
+That's pretty [[http://braverhund.com][nerdy]].
+
 ** Strings
 
 Choice of quote character is usually a matter of taste, but the choice can sometimes buy convenience. If your string contains a quote character you can either escape it:
@@ -266,6 +279,8 @@ or use the other quote character:
 #+BEGIN_SRC python
 >>> journey = "Don't stop believing."
 #+END_SRC
+
+- How does Python represent the value of the variable ~journey~ ?
 
 ** String Operations
 
@@ -295,6 +310,9 @@ Note that the result of an index access is a string:
 'me'
 #+END_SRC
 
+- What is the index of the first character of a string?
+- What is the index of the last character of a string?
+
 ** String Slicing
 
 ~[:end]~ gets the first characters up to but not including ~end~
@@ -320,6 +338,8 @@ Note that the result of an index access is a string:
 >>>
 #+END_SRC
 
+- What is the relationship between the ending index of a slice and the beginning index of a slice beginning right after the first slice?
+
 ** String Methods
 
 ~str~ is a class (you'll learn about classes later) with many methods (a method is a function that is part of an object). Invoke a method on a string using the dot operator.
@@ -331,6 +351,9 @@ Note that the result of an index access is a string:
 >>> 'foobar'.find('o')
 1
 #+END_SRC
+
+- Write a string slice expression that returns the username from an email address, e.g., for 'bob@aol.com' it returns 'bob'.
+- Write a string slice expression that returns the host name from an email address, e.g., for 'bob@aol.com' it returns 'aol.com'.
 
 ** Values, Variables, and Expression
 

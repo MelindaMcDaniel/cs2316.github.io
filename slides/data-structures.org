@@ -48,7 +48,7 @@ A list is an indexed sequence of Python objects.
 >>> leer = list()
 #+END_SRC
 
-- Normally you store elements of the same type in a list, but you
+Normally you store elements of the same type in a list, but you
 can mix element types
 
 #+BEGIN_SRC python
@@ -60,6 +60,8 @@ can mix element types
 >>> type(mixed[2])
 <class 'float'>
 #+END_SRC
+
+- What's the length of the second element of ~mixed~ ?
 
 ** Creating Lists from Strings
 
@@ -118,6 +120,7 @@ elements
 ['Stan', 'Kyle', 'Eric', 'Kenny']
 #+END_SRC
 
+
 ** List Operators
 
 The ~in~ operator tests for list membership. Can be negated with
@@ -132,13 +135,17 @@ True
 False
 #+END_SRC
 
-- The + operator concatenates two lists (note 'Butters' in list):
+- The + operator concatenates two lists:
 
 #+BEGIN_SRC python
 >>> girls = ['Wendy', 'Annie', 'Bebe', 'Heidi']
 >>> boys + girls
 ['Stan', 'Kyle', 'Cartman', 'Kenny', 'Wendy', 'Annie', 'Bebe', 'Heidi']
-The * operator repeats a list to produce a new list:
+#+END_SRC
+
+- The * operator repeats a list to produce a new list:
+
+#+BEGIN_SRC python
 >>> ['Ni'] * 5
 ['Ni', 'Ni', 'Ni', 'Ni', 'Ni']
 #+END_SRC
@@ -281,6 +288,10 @@ Slicing lists works just like slicing strings (they're both sequences)
 #+END_SRC
 
 Note that slice operations return new lists.
+
+- What's the value of ~boys[-1:1]~ ?
+- What's the value of ~boys[-1:1:-1]~ ?
+- What's the value of ~boys[::-1]~ ?
 
 ** Aliases
 
