@@ -129,8 +129,8 @@ Just as an operating system command shell searches for executable programs by se
 
 #+BEGIN_SRC python
 >>> import sys
->>> import pprint as pp
->>> pp.pprint(sys.path)
+>>> from pprint import pprint
+>>> pprint(sys.path)
 ['',
  '/home/chris/miniconda3/lib/python35.zip',
  '/home/chris/miniconda3/lib/python3.5',
@@ -148,21 +148,21 @@ Also, note use of ~pprint~.
 
 Modules are just Python files. The directory path from some
 sys.path root to a Python source file is called a package. Make a
-directory called hanglib and download this file into it: drawing.py
+directory called hanglib and download this file into it: [[../code/hanglib/draw.py][draw.py]]
 
 #+BEGIN_SRC python
->>> import hanglib.drawing
->>> hanglib.drawing.stand()
+>>> import hanglib.draw
+>>> hanglib.draw.stand()
 #+END_SRC
 
-~hanglib~ is a package 1 and drawing is a module within the hanglib
+~hanglib~ is a package and ~draw~ is a module within the ~hanglib~
 package. Of course, you could import it as an alias to make coding
 more convenient:
 
 #+BEGIN_SRC python
->>> import hanglib.drawing
->>> hanglib.drawing.stand()
->>> import hanglib.drawing as draw
+>>> import hanglib.draw
+>>> hanglib.draw.stand()
+>>> import hanglib.draw as draw
 >>> draw.head()
 #+END_SRC
 
@@ -170,7 +170,7 @@ Notice that, as in this example, we can make our own modules.
 
 ** Python Scripts
 
-Take a look at the drawing.py file. Notice the if statement at the bottom:
+Take a look at the draw.py file. Notice the if statement at the bottom:
 
 #+BEGIN_SRC python
 # Is this the main (top-level) module?
@@ -232,7 +232,8 @@ Give me a number and I'll double it: 3
 
 ** Command Line Arguments
 
-[[Argument_Clinic.png]]
+#+ATTR_LaTeX: height=3in
+[[file:Argument_Clinic.png]]
 
 #+BEGIN_SRC python
 $ python args.py one 2 two + one

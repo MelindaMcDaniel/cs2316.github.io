@@ -28,7 +28,7 @@ Values can be collected in data structures:
 - Dictionaries
 - Sets
 
-This lecture just an overview. See the [[https://docs.python.org/3.4/library/stdtypes.html][Python documentation]] for
+This lecture just an overview. See the [[https://docs.python.org/3.6/library/stdtypes.html][Python documentation]] for
 complete details.
 
 ** Lists
@@ -119,7 +119,6 @@ elements
 >>> boys
 ['Stan', 'Kyle', 'Eric', 'Kenny']
 #+END_SRC
-
 
 ** List Operators
 

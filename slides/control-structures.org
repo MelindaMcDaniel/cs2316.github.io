@@ -69,15 +69,6 @@ Examples:
 1 > 1  # False
 #+END_SRC
 
-** Logical Expressions
-
-Simple boolean expressions can be combined to form larger expressions using logical operators and, or, and not.
-
-#+BEGIN_SRC python
-(1 == 1) and (1 != 1) // False
-(1 == 1) or (1 != 1) // True
-#+END_SRC
-
 ** Truth in Python
 
 These values are equivalent to ~False~:
@@ -93,6 +84,32 @@ These values are equivalent to ~False~:
 - empty set ~set()~
 
 All other values are equivalent to True.
+
+** Logical Expressions
+
+Boolean expressions can be combined using logical operators and, or, not.
+
+#+BEGIN_SRC python
+(1 == 1) and (1 != 1) // False
+(1 == 1) or (1 != 1) // True
+#+END_SRC
+
+Logical expressions use short-circuit evaluation:
+
+- ~or~ only evaluates second operand if first operand is ~False~
+- ~and~ only evaluates second operand if first operand is ~True~
+
+What are the values of the following expressions?
+
+- ~True and False~
+- ~True and 0~
+- ~True and []~
+- ~True and None~
+- ~type(True and None)~
+- ~False or 1~
+- ~True or 1~
+
+Guard idiom: ~(b == 0) or print(a / b)~, or ~(b != 0) and print(a / b)~
 
 ** The ~if-else~ Statement
 
@@ -148,7 +165,6 @@ else:
 
 This multi-way if-else is equivalent, and clearer:
 
-
 #+BEGIN_SRC python
 if color == "red":
     print("Redrum!")
@@ -157,21 +173,6 @@ elif color == "yellow":
 else:
     print("A Lack of Color")
 #+END_SRC
-
-** Short-Circuit Evaluation
-
-Here's a common idiom for testing an operand before using it:
-
-#+BEGIN_SRC python
-if (kids != 0) and ((pieces / kids) >= 2):
-    print("Each kid may have two pieces.")
-#+END_SRC
-
-In this example Python uses short-circuit evaluation. If
-
-~kids != 0~
-
-evaluates to ~False~, then the second sub-expression is not evaluated, thus avoiding a divide-by-zero error.
 
 ** Loops
 

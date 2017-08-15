@@ -15,19 +15,19 @@ Tuesday, 2017-08-15
 16:10 - 16:20; Break
 16:20 - 17:00; Exercise: [Grades Module](../exercises/grades.html)
 Wednesday, 2017-08-16
-13:30 - 14:20; classes-objects
+13:30 - 14:20; functional-programming
 14:20 - 14:30; Break
-14:30 - 15:30; Exercise: [Treating People as Objects](../exercises/people-objects.html)
+14:30 - 15:30; classes-objects
 15:30 - 15:40; Break
-15:40 - 17:00; functional-programming
+15:40 - 17:00; Exercise: [Treating People as Objects](../exercises/people-objects.html)
 Thursday, 2017-08-17
-13:00 - 13:50; Exercise: []()
+13:00 - 13:50; file-io
 13:50 - 14:00; Break
-14:00 - 14:50; file-io
+14:00 - 14:50; csv-files
 14:50 - 15:00; Break
-15:00 - 15:50; csv-files
+15:00 - 15:50; Exercise: [Grades Report](../exercises/grades-report.html)
 15:50 - 16:00; Break
-16:00 - 16:30; Exercise: []()
+16:00 - 16:30; Exercise: [Tides](../exercises/tides.html)
 Friday, 2017-08-18
 14:00 - 14:50; data-analytics
 14:50 - 15:00; Break

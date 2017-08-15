@@ -222,4 +222,4 @@ def class_dates(first, last, class_days):
 
 ** Exercise
 
-Write comprehension expressions that build the data structures from the [[../exercises/grades.py][grades.py]] exercise.
+Write comprehension expressions that build the data structures in the [[../exercises/grades.html][Grades]] exercise.
