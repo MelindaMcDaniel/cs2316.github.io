@@ -43,3 +43,9 @@ Write a module named `grades` with the following functions:
 - (Optional) `rank(grades, item)`, which takes a `dict[str, dict[str, float]]` mapping names to dicts of grades and returns a `list[tuple[str, float]]` of (student, grade) pairs where `grade` is the grade for `student` on `item`, sorted in descending order by the grades.
 
   - You may find the [`sorted`](https://docs.python.org/3/library/functions.html#sorted) function helpful. You'll also need to understand [higher-order functions](../slides/functional-programming.pdf)
+
+## Sample Solution
+
+Don't peek until you've tried it yourself first!
+
+- [grades.py](grades.py)
