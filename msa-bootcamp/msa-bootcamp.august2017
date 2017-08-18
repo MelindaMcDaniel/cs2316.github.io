@@ -4,34 +4,36 @@ Monday, 2017-08-14
 14:30 - 14:40; Break
 14:40 - 15:30; values-variables
 15:30 - 16:40; Break
-16:50 - 17:00; data-structures
+16:50 - 17:00; values-variables
 Tuesday, 2017-08-15
-13:00 - 13:50; functions
+13:00 - 13:50; data-structures
 13:50 - 14:00; Break
-14:00 - 14:50; modules-programs
+14:00 - 14:50; data-structures
 14:50 - 15:00; Break
-15:00 - 15:30; Exercise: [BMI Module](../exercises/bmi.html)
-15:30 - 16:10; control-structures
+15:00 - 15:30; modules-programs
+15:30 - 16:10; functions
 16:10 - 16:20; Break
-16:20 - 17:00; Exercise: [Grades Module](../exercises/grades.html)
+16:20 - 17:00; Exercise: [BMI Module](../exercises/bmi.html)
 Wednesday, 2017-08-16
-13:30 - 14:20; functional-programming
+13:30 - 14:20; control-structures
 14:20 - 14:30; Break
-14:30 - 15:30; classes-objects
+14:30 - 15:30; control-structures
 15:30 - 15:40; Break
-15:40 - 17:00; Exercise: [Treating People as Objects](../exercises/people-objects.html)
+15:40 - 17:00; Exercise: [Grades Module](../exercises/grades.html)
 Thursday, 2017-08-17
-13:00 - 13:50; file-io
+13:00 - 13:50; Exercise: [Grades Module](../exercises/grades.html)
 13:50 - 14:00; Break
-14:00 - 14:50; csv-files
+14:00 - 14:50; functional-programming
 14:50 - 15:00; Break
-15:00 - 15:50; Exercise: [Calc Grades](../exercises/calc-grades.html)
+15:00 - 15:50; functional-programming
 15:50 - 16:00; Break
-16:00 - 16:30; Exercise: [Tides](../exercises/tides.html)
+16:00 - 16:30; file-io
 Friday, 2017-08-18
-14:00 - 14:50; data-analytics
+14:00 - 14:50; classes-objects
 14:50 - 15:00; Break
-15:00 - 15:30; numpy
+15:00 - 15:30; csv-files
 15:30 - 15:40; Break
-15:40 - 16:30; pandas
-16:30 - 17:00; matplotlib
+15:40 - 16:30; Exercise: [Calc Grades](../exercises/calc-grades.html)
+16:30 - 17:00; scipy
+Next Steps
+1; scipy, numpy, pandas, matplotlib

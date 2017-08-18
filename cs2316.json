@@ -194,6 +194,11 @@
         "materials": [""],
         "order": [100]
     },
+    "scipy": {
+        "topic": "[Data Analytics](slides/scipy.pdf)",
+        "materials": [""],
+        "order": [100]
+    },
     "data-analytics": {
         "topic": "[Data Analytics](slides/scipy.pdf)",
         "materials": [""],
