@@ -41,7 +41,7 @@ if __name__=="__main__":
         item_sums = [0] * (len(header) - 2)
         item_counts = [0] * (len(header) - 2)
         grade_counts = {"A": 0, "B": 0, "C": 0, "D": 0, "F": 0}
-        for line in csv.reader(infile):
+        for line in reader:
             scores = [float(score) for score in line[1:]]
             avg, grade = calc_grade(scores)
             writer.writerow(line + [f"{avg:.2f}", grade])
