@@ -7,7 +7,7 @@ title: CS 2316 Pre-test
 
 ## Introduction
 
-In order to accomodate the ISyE department's request for additional material on data analytics, CS 2316 will require incoming students to have a basic proficiency in Python or the ability to get up to speed quickly with Python. The following exercise are designed to help you guage your own readiness for CS 2316. If you can figure out these exercises by the end of the first week of the semester you will have no problem in the course. If you find them difficult but manageable then you'll probably be fine because we will review Python in the first three weeks. If you have no idea how to begin these exercises, you should drop CS 2316 and improve your Python programming skills before registering again.
+In order to accommodate the ISyE department's request for additional material on data analytics, CS 2316 will require incoming students to have a basic proficiency in Python or the ability to get up to speed quickly with Python. The following exercises are designed to help you gauge your own readiness for CS 2316. If you can figure out these exercises by the end of the first week of the semester you will have no problem in the course. If you find them difficult but manageable then you'll probably be fine because we will review Python in the first three weeks. If you have no idea how to begin these exercises, you should drop CS 2316 and improve your Python programming skills before registering again.
 
 ## Exercises
 
