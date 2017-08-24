@@ -3,7 +3,8 @@
         "topic": "[Intro to CS 2316](slides/intro-cs2316.pdf)",
         "materials": ["[Syllabus](syllabus.html)", "[Schedule](schedule.html)",
                       "[Meet the Teacher](http://cs1331.gatech.edu/slides/meet-simpkins.html)",
-                      "[Video: Getting Started](https://youtu.be/order)"],
+                      "[Video: Getting Started](https://youtu.be/order)",
+                      "Exercise: [CS 2316 Pre-test](exercises/pre-test.html)]"],
         "znjTbnH42Rk": [1]
     },
     "intro-python": {
