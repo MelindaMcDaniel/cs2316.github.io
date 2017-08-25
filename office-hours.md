@@ -5,7 +5,7 @@ title: CS 2316 - Office Hours
 
 # Office Hours
 
-## Professor Simpkins's Office Hours, CoC 133 or on of my TA labs -- CoC 107 and 107A.
+## Professor Simpkins's Office Hours, CoC 133 or one of my TA labs -- CoC 107 and 107A.
 
 - Tuesdays, 13:30 - 16:30
 
@@ -14,4 +14,4 @@ Any time my office door is open, feel free to walk in. Email me if you need to s
 
 ## TA Lab, CoC 107A
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQh6Zv3bsolzAfekGRwKY0PGLipEqGKhx_gUbxfoLcgR1osZTXnxImnc18FQ2J8f628nkU36nNDCTAQ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe style="width: 90%; height: 1000px;"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQh6Zv3bsolzAfekGRwKY0PGLipEqGKhx_gUbxfoLcgR1osZTXnxImnc18FQ2J8f628nkU36nNDCTAQ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
