@@ -28,9 +28,16 @@ For this class you don't technically need the third line above, but these are co
 
 1. Open a terminal, i.e., operating system (OS) command shell.
 
-    -  The Mac OS X terminal is `/Applications/Utilities/Terminal.app` in the Finder.  You should drag Terminal to your dock -- you'll use it often.
+  -  The Mac OS X terminal is `/Applications/Utilities/Terminal.app` in the Finder.  You should drag Terminal to your dock -- you'll use it often.
 
-    - On Windows search for and run `cmd.exe`, for example by simply typing `cmd` in the start search box.
+  - On Linux use your terminal application of choice.
+
+  - On Windows you have two choices:
+
+    1. If you set up your path correctly, search for and run `cmd.exe`, for example by simply typing `cmd` in the start search box.
+    2. In your start menu, find the Anaconda Prompt. This is a version of `cmd.exe` that is pre-configured with the appropriate environment variables. This will probably be the easiest option for most people.
+
+    Note: do not use Power Shell.
 
 2. At the command prompt type `python --version`.  You should get a response like `Python 3.6.0 :: Continuum Analytics, Inc.`.
 
