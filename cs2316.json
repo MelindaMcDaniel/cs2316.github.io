@@ -266,5 +266,10 @@
         "topic": "[Database Normalization](slides/db-normalization.pdf)",
         "materials": [""],
         "order": [100]
+    },
+    "nlp": {
+        "topic": "[Natural Language Processing](slides/nlp.pdf)",
+        "materials": [""],
+        "order": [100]
     }
 }
