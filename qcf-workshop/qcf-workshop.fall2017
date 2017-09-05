@@ -2,31 +2,31 @@ Friday, 2017-09-08
 15:30 - 16:30; Course Intro and Tool Set-up;[Video: Getting Started](https://www.youtube.com/watch?v=znjTbnH42Rk&t)
 16:30 - 17:30; intro-python
 17:30 - 19:00; values-variables
-TBD, 2017-09
-15:30 - 17:00; data-structures
-17:00 - 18:00; modules-programs
-18:00 - 19:00; functions
+Saturday, 2017-09-09
+10:30 - 12:00; data-structures
+12:00 - 13:00; modules-programs
+13:00 - 14:00; functions
 Friday, 2017-09-15
 15:30 - 17:00; Exercise: [BMI Module](../exercises/bmi.html)
 18:00 - 19:00; ipython, control-structures
-TBD, 2017-09
-15:30 - 16:30; control-structures
-16:30 - 17:30; Exercise: [Grades Module](../exercises/grades.html)
-17:30 - 19:00; functional-programming
+Saturday, 2017-09-16
+10:30 - 11:30; control-structures
+11:30 - 12:30; Exercise: [Grades Module](../exercises/grades.html)
+12:30 - 14:00; functional-programming
 Friday, 2017-09-22
 15:30 - 16:30; classes-objects
 16:30 - 17:00; file-io
 17:00 - 18:00; csv-files
 18:00 - 19:00; Exercise: [Calc Grades](../exercises/calc-grades.html)
-TBD, 2017-09
-15:30 - 16:30; regular-expressions
-16:30 - 18:00; nlp
-18:00 - 19:00; html
+Saturday, 2017-09-23
+10:30 - 11:30; regular-expressions
+11:30 - 13:00; nlp
+13:00 - 14:00; html
 Friday, 2017-09-29
-15:30 - 16:30; web-scraping
+13:30 - 16:30; web-scraping
 16:30 - 17:30; web-services
 17:00 - 18:00; scipy
 18:00 - 19:00; numpy
-TBD, 2017-09
-15:30 - 17:30; pandas
-17:30 - 19:00; matplotlib
+Saturday, 2017-09-30
+10:30 - 12:30; pandas
+12:30 - 14:00; matplotlib
