@@ -101,11 +101,10 @@
         "order": [14,15]
     },
     "json": {
-        "topic": "[Data Exchange Formats](slides/json.pdf)",
-        "materials": ["[JSON Spec](http://json.org/)"],
-        "order": [16]
+        "topic": "[JavaScript Object Notation](slides/json.pdf)",
+        "materials": ["IP 8", "[JSON Spec](http://json.org/)", "Exercise: [Data Converter](exercises/data-converter.html)"],
+        "order": [100]
     },
-
     "data-exchange-formats": {
         "topic": "[Data Exchange Formats](slides/data-exchange-formats.pdf)",
         "materials": ["IP 8", "[XML](slides/xml.pdf)",
@@ -113,7 +112,7 @@
                       "[JSON Spec](http://json.org/)",
                       "[people.xml](code/structured-files/people.xml)",
                       "Exercise: [Books](exercises/books.html)"],
-        "order": [100]
+        "order": [16]
     },
     "web-services": {
         "topic": "[Web Services](slides/web-services.pdf)",
@@ -266,11 +265,6 @@
     "database-normalization": {
         "topic": "[Database Normalization](slides/db-normalization.pdf)",
         "materials": [""],
-        "order": [100]
-    },
-    "json": {
-        "topic": "[JavaScript Object Notation](slides/json.html)",
-        "materials": ["IP 8", "[JSON Spec](http://json.org/)", "Exercise: [Data Converter](exercises/data-converter.html)"],
         "order": [100]
     }
 }
