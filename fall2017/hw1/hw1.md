@@ -46,7 +46,7 @@ The specification for each function is given as a [docstring](https://www.python
 Because each function will have a docstring that includes usage examples formatted as Python interactive sessions, you can use [doctest](https://docs.python.org/3/library/doctest.html) to test your code using this command line invocation:
 
 ```sh
-python -m doctest -v fit.py
+python -m doctest -v hw1.py
 ```
 
 If all the tests pass, then you'll probably (but not defnitely) get a 100 on this homework.
