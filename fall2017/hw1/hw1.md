@@ -98,20 +98,23 @@ def count_if(sequence, predicate):
     1
     """
 
-def palindrome(text):
-    """Tests whether a string is a palindrome, ignoring case, puntuation,
-    and spaces.
+def word_counts(sentence_list):
+    """Return a dictionary mapping words in normalized text to their
+    counts in the text.
 
     Parameters:
-    text: str -- the text of interest
+    sentence_list: List[str] - a list of sentences
 
-    Return: True if sequence of letters in text is a palindrome, false otherwise
+    Return: a Dict[str, int] whose keys are words and associated values are
+    the number of times the word appears in the sentences in sentence_list
 
-    Usage Examples:
-    >>> palindrome('Borrow or rob')
+    Usage Examples: (Note technique for testing dict equality.)
+
+    >>> word_counts(["i dont even have any skills", "i have numchuk skills \
+    bow hunting skills computer hacking skills"]) == {'have': 2, 'numchuk': 1, \
+    'hacking': 1, 'i': 2, 'even': 1, 'computer': 1, 'any': 1, 'bow': 1,\
+    'hunting': 1, 'dont': 1, 'skills': 4}
     True
-    >>> palindrome('This is a palindrome')
-    False
     """
 
 def make_tups(seq1, seq2):
