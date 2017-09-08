@@ -11,7 +11,8 @@ In this assignment you'll practice
 
 - writing functions and modules,
 - doing arithmetic calculations,
-- simple text processing, and
+- simple text processing,
+- manipulating data structures and
 - testing modules with doctest.
 
 ## General Instructions
