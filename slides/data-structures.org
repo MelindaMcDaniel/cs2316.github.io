@@ -117,6 +117,8 @@ Normally you store elements of the same type in a list, but you can mix element 
 'z']
 #+END_SRC
 
+- Use the ~split()~ method to separate an email address in to user name and host name.
+
 ** List Operators
 
 The ~in~ operator tests for list membership. Can be negated with not:
