@@ -48,50 +48,6 @@ A list is an indexed sequence of Python objects.
 >>> leer = list()
 #+END_SRC
 
-Normally you store elements of the same type in a list, but you
-can mix element types
-
-#+BEGIN_SRC python
->>> mixed = [1, 'Two', 3.14]
->>> type(mixed[0])
-<class 'int'>
->>> type(mixed[1])
-<class 'str'>
->>> type(mixed[2])
-<class 'float'>
-#+END_SRC
-
-- What's the length of the second element of ~mixed~ ?
-
-** Creating Lists from Strings
-
-- Create a list from a string with str's split() function:
-
-#+BEGIN_SRC python
->>> grades_line = "90, 85, 92, 100"
->>> grades_line.split()
-['90,', '85,', '92,', '100']
-#+END_SRC
-
-- By default ~split()~ uses whitespace to delimit
-elements. To use a different delimiter, pass as argument to
-~split()~:
-
-#+BEGIN_SRC python
->>> grades_line.split(',')
-['90', ' 85', ' 92', ' 100']
-#+END_SRC
-
-- The ~list()~ function converts any iterable object (like sequences)
-to a list. Remember that strings are sequences of characters:
-
-#+BEGIN_SRC python
->>> list('abcdefghijklmnopqrstuvwxyz')
-['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
-'z']
-#+END_SRC
-
 ** Accessing List Elements
 
 Individual list elements are accessed by index.
@@ -111,8 +67,7 @@ Individual list elements are accessed by index.
 'Kenny'
 #+END_SRC
 
-- Lists are mutable, meaning you can add, delete, and modify
-elements
+- Lists are mutable, meaning you can add, delete, and modify elements
 
 #+BEGIN_SRC python
 >>> boys[2] = 'Eric'
@@ -120,10 +75,51 @@ elements
 ['Stan', 'Kyle', 'Eric', 'Kenny']
 #+END_SRC
 
+** Lists are Heterogeneous
+
+Normally you store elements of the same type in a list, but you can mix element types
+
+#+BEGIN_SRC python
+>>> mixed = [1, 'Two', 3.14]
+>>> type(mixed[0])
+<class 'int'>
+>>> type(mixed[1])
+<class 'str'>
+>>> type(mixed[2])
+<class 'float'>
+#+END_SRC
+
+- What's the length of the second element of ~mixed~ ?
+
+** Creating Lists from Strings
+
+- Create a list from a string with str's ~split()~ function:
+
+#+BEGIN_SRC python
+>>> grades_line = "90, 85, 92, 100"
+>>> grades_line.split()
+['90,', '85,', '92,', '100']
+#+END_SRC
+
+- By default ~split()~ uses whitespace to delimit elements. To use a different delimiter, pass as argument to ~split()~:
+
+#+BEGIN_SRC python
+>>> grades_line.split(',')
+['90', ' 85', ' 92', ' 100']
+#+END_SRC
+
+- The ~list()~ function converts any iterable object (like sequences) to a list. Remember that strings are sequences of characters:
+
+#+BEGIN_SRC python
+>>> list('abcdefghijklmnopqrstuvwxyz')
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+'z']
+#+END_SRC
+
 ** List Operators
 
-The ~in~ operator tests for list membership. Can be negated with
-not:
+The ~in~ operator tests for list membership. Can be negated with not:
 
 #+BEGIN_SRC python
 >>> boys
@@ -153,8 +149,7 @@ False
 
 Python provides several built-in functions that take list parameters.
 
-- ~len(s)~ returns the number of elements in the list ~s~ (more
-generally, the sequence ~s~)
+- ~len(xs)~ returns the number of elements in the list ~xs~ (more generally, the sequence ~xs~)
 
 #+BEGIN_SRC python
 >>> boys
@@ -163,24 +158,22 @@ generally, the sequence ~s~)
 4
 #+END_SRC
 
-- ~min(s)~ returns the least element of ~s~, ~max(s)~ returns the
-greatest
+- ~min(xs)~ returns the least element of ~xs~, ~max(xs)~ returns the greatest
 
 #+BEGIN_SRC python
->>> min(boys)
-'Cartman'
 >>> min([8, 6, 7, 5, 3, 0, 9])
 0
->>> max(boys)
-'Stan'
+>>> max([8, 6, 7, 5, 3, 0, 9])
+9
 #+END_SRC
+
+- What is ~min(boys)~?
 
 ** The ~del~ Statement
 
 The ~del~ statement deletes variables.
 
-- Each element of a list is a variable whose name is formed by
-indexing into the list with square brackets.
+- Each element of a list is a variable whose name is formed by indexing into the list with square brackets.
 
 #+BEGIN_SRC python
 >>> boys = ['Stan', 'Kyle', 'Cartman', 'Kenny']
@@ -210,7 +203,7 @@ NameError: name 'boys' is not defined
 
 Methods are invoked on an object (an instance of a class) by appending a dot, ~.~, and the method name.
 
-- ~s.count(x)~: number of occurences of ~x~ in the sequence ~s~
+- ~xs.count(x)~: number of occurences of ~x~ in the sequence ~xs~
 
 #+BEGIN_SRC python
 >>> surfin_bird = "Bird bird bird b-bird's the word".split()
@@ -220,7 +213,7 @@ Methods are invoked on an object (an instance of a class) by appending a dot, ~.
 2
 #+END_SRC
 
-- ~s.append(x)~ adds the single element ~x~ to the end of ~s~
+- ~xs.append(x)~ adds the single element ~x~ to the end of ~xs~
 
 #+BEGIN_SRC python
 >>> boys.append('Butters')
@@ -234,8 +227,7 @@ s.extend(t) adds the elements of t to the end of s
 
 ** List Methods
 
-- ~s.remove(x)~ removes the first occurrence of ~x~ in ~s~, or raises a
-~ValueError~ if ~x~ is not in ~s~
+- ~xs.remove(x)~ removes the first occurrence of ~x~ in ~xs~, or raises a ~ValueError~ if ~x~ is not in ~xs~
 
 #+BEGIN_SRC python
 >>> boys.remove('Kenny')
@@ -247,7 +239,7 @@ File "<stdin>", line 1, in <module>
 ValueError: list.remove(x): x not in list
 #+END_SRC
 
-- ~s.pop()~ removes and returns the last element of the list
+- ~xs.pop()~ removes and returns the last element of the list
 
 #+BEGIN_SRC python
 >>> boys
@@ -308,8 +300,7 @@ Aliasing occurs when two or more variables reference the same object
 
 Now boys and brats are aliases.
 
-- Changes to one are reflected in the other, becuase they reference
-the same object
+- Changes to one are reflected in the other, becuase they reference the same object
 
 #+BEGIN_SRC python
 >>> brats.append('Timmy')
@@ -340,8 +331,7 @@ You have to reassign to the list to make an update:
 'Wendy']
 #+END_SRC
 
-Notice that after the reassignment, ~brats~ is no longer an alias of
-~boys~
+Notice that after the reassignment, ~brats~ is no longer an alias of ~boys~
 
 #+BEGIN_SRC python
 >>> boys
@@ -374,14 +364,14 @@ Notice that after the reassignment, ~brats~ is no longer an alias of
 
 ** A Few More List Operations
 
-You can combine the elements of a list to form a string with ~str~'s
-~join()~ method.
+You can combine the elements of a list to form a string with ~str~'s ~join()~ method.
 
 #+BEGIN_SRC python
 >>> aretha = ['R', 'E', 'S', 'P', 'E', 'C', 'T']
 >>> "-".join(aretha)
 'R-E-S-P-E-C-T'
 #+END_SRC
+
 ~sorted()~ function returns a new list
 
 #+BEGIN_SRC python
