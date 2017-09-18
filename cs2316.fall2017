@@ -14,20 +14,20 @@ Week 3
 Week 4
 2017-09-11;Irmageddon - No Class
 2017-09-13;functional-programming
-2017-09-15;classes-objects
+2017-09-15;
 Data Formats, Retrieval and Storage
 Week 5
 2017-09-18;review1
 2017-09-20;**Exam 1**;;[HW1 Due 2017-09-20](fall2017/hw1/hw1.html)
-2017-09-22;file-io,csv-files
+2017-09-22;classes-objects
 Week 6
-2017-09-25;data-exchange-formats
-2017-09-27;web-services
+2017-09-25;file-io,csv-files
+2017-09-27;data-exchange-formats
 2017-09-29;html;;Progress Reports Due
 Week 7
 2017-10-02;regular-expressions
-2017-10-04;web-scraping
-2017-10-06;sqlite
+2017-10-04;web-mining
+2017-10-06;relational-databases
 Week 8
 2017-10-09;Fall Student Recess - No Class
 2017-10-11;sql
