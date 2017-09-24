@@ -18,14 +18,14 @@ In this exercise you will practice
 
 **This is an individual assignment.**
 
-Collaboration at a reasonable level will not result in substantially similar code. Students may only collaborate with fellow students currently taking CS 2316, the TA's and the lecturer. Collaboration means talking through problems, assisting with debugging, explaining a concept, etc. You should not exchange code or write code for others.
+Collaboration at a reasonable level will not result in substantially similar code. Students may only collaborate with fellow students currently taking CS 2316, the TA's and the professor. Collaboration means talking through problems, assisting with debugging, explaining a concept, etc. You should not exchange code or write code for others.
 
 Notes:
 
 - Include a comment with your name, T-Square login ID, and GTID at the top of all Python files.
 - *Do not wait until the last minute* to do this assignment in case you run into problems.
 - Pay close attention to whether problems require you to print or return the results! Printing instead of returning or vice versa will result in a point deduction.
-- Name all functions as specified in the instructions.
+- Name all modules, classes methods, and functions as specified in the instructions.
 - Unless otherwise stated, you can assume inputs will be valid in this assignment (i.e. error checking is not required).
 - In a Python module you must define a value (such as a function) before referencing it. So if you call function A from function B, the definition of function A must come before the definition of function B in the file.
 
@@ -42,17 +42,17 @@ Write a module named `stocks` that includes two classes:
   - `symbol`: `str` -- the official stock ticker symbol
   - `name`: `str` -- the company's name
   - `sector`: `str` -- the company's sector, as defined by [Yahoo Finance](https://finance.yahoo.com/industries)
-  - `stock_data`: `dict[datetime, StockData]` -- a dictionary mapping `datetime` objects to `StockData` objects
+  - `stock_data`: `dict[datetime, StockData]` -- a dictionary mapping [`datetime`](https://docs.python.org/3/library/datetime.html#datetime-objects) objects to `StockData` objects
 
   and the following instance methods:
 
-  - `__init__` -- which takes argumnts that are used to initialize the values of the instance attribute listed above (except `stock_data`). Only the `symbol` must be provided when creating a `Company` instance, the other instance attributes (except `stock_data`) should have the value `None` if not provided as arguments to `__init__`.
+  - `__init__` -- which takes arguments that are used to initialize the values of the instance attribute listed above (except `stock_data`), in the order listed above. Only the `symbol` must be provided when creating a `Company` instance, the other instance attributes (except `stock_data`) should have the value `None` if not provided as arguments to `__init__` when creating a `Company` object.
 
-  - a method which is automatically called whenever a `Company` object is printed or converted to a `str` and returns a string with the company's name and stock symbol in parentheses, e.g., `Google (GOOG)`
+  - a method which is automatically called whenever a `Company` object is printed or converted to a `str` and returns a string with the company's name and stock symbol in parentheses, e.g., `Alphabet (GOOG)`
 
-  - a method which is automatically called by the Python REPL to print the value of a `Company` object to the console which returns a string with the class name and all the attributes (except `stock_data`) between angle brackets, e.g., `<Company: name=Google, symbol=GOOG, sector=Technology>`
+  - a method which is automatically called by the Python REPL to print the value of a `Company` object to the console and returns a string with the class name and all the attributes (except `stock_data`) between angle brackets, e.g., `<Company: name=Alphabet, symbol=GOOG, sector=Technology>`
 
-  - `performance` -- which takes an optional start date and optional end date and returns the percentage return (as a float) from the open price on the start date to the adjusted closing price on the end date, i.e., if you multiply the open price on the start date by the value returned by this function you get the adjusted closing price on the end date. Dates should be [datetime](https://docs.python.org/3/library/datetime.html#datetime-objects) objects with date components but no time components.
+  - `performance` -- which takes an optional start date and optional end date and returns the percentage return (as a `float`, e.g., 20% is .20, 120% is 1.20) from the open price on the start date to the adjusted closing price on the end date, i.e., if you multiply the open price on the start date by the value returned by this function you get the adjusted closing price on the end date. Dates should be [datetime](https://docs.python.org/3/library/datetime.html#datetime-objects) objects with date components but no time components.
 
     - If the start date is not in `stock_data`, use the next date after the specified start date for which there is data.
     - If the start date is not provided, use the first date in `stock_data`.
@@ -81,7 +81,9 @@ Your script should:
 - read a CSV file in its working directory which is named after the stock symbol (with a .csv ending),
 - use the data in the CSV file to populate the `Company` object's `stock_data` dictionary,
 - use the `Company` object's `performance` method to find the requested stock return, and
-- print a report as in the examples below.
+- print a report as in the examples below. Note that the performace reported by the scrip t should be in percentage format, not a `float` as returned by `Company.performance`.
+
+Your `stocks` module not perform any of the script actions listed above when imported as a module.
 
 Your program should work with CSV files formatted and named like the ones you can download from Yahoo Finace, e.g., [Alphabet, Inc historical data](https://finance.yahoo.com/quote/GOOG/history?p=GOOG). For your convenience you may use the following files: [AAPL.csv](../../data/AAPL.csv), [BAC.csv](../../data/BAC.csv), [C.csv](../../data/C.csv), [CSCO.csv](../../data/CSCO.csv), [F.csv](../../data/F.csv), [FB.csv](../../data/FB.csv), [FCAU.csv](../../data/FCAU.csv), [GM.csv](../../data/GM.csv), [GOOG.csv](../../data/GOOG.csv), [JPM.csv](../../data/JPM.csv), [ORCL.csv](../../data/ORCL.csv), [WFC.csv](../../data/WFC.csv).
 
@@ -99,7 +101,7 @@ Stock performance of None (GOOG) from 2015-01-01 to 2017-09-21: 77.2%.
 
 ## Tips and Considerations
 
-- I'm not a finance expert, so if I've misconstrued some aspects of stocks, consider this exercise practice in following specifications *as written* rather than using your own domain knowledge.
+- I'm not a finance expert, so if I've misconstrued some aspects of stocks, consider this assignment as practice in following specifications *as written* rather than using your own domain knowledge.
 - You'll want to use [Python's datetime module](https://docs.python.org/3/library/datetime.html), in particular you'll find [datetime.strptime](https://docs.python.org/3/library/datetime.html#datetime.datetime.strptime) useful.
 
 ## Turn-in Procedure
