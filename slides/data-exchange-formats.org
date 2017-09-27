@@ -58,16 +58,10 @@
 </people>
 #+END_SRC
 
-** Processing XML
-
-- Python's built-in [[https://docs.python.org/3/library/xml.etree.elementtree.html][ElementTree API]]
-
-  - Builds a nested set of objects representing a Document Object Model (DOM) tree
-
-- [[https://github.com/martinblech/xmltodict][xmltodict]] "makes working with XML feel like you are working with JSON"
-
-
 ** Parsing XML with ElementTree
+
+Use Python's built-in [[https://docs.python.org/3/library/xml.etree.elementtree.html][ElementTree API]]
+
 
 #+BEGIN_SRC python
 In [17]: import xml.etree.ElementTree as ET
@@ -92,62 +86,15 @@ StephenHawking
 	 Comedian
 #+END_SRC
 
-** Parsing XML with ~xmltodict~
-
-#+BEGIN_SRC python
-In [5]: ps = xmltodict.parse(open('people.xml').read())
-
-In [6]: ps
-Out[6]:
-OrderedDict([('people',
-              OrderedDict([('person',
-                            [OrderedDict([('firstName', 'Alan'),
-                                          ('lastName', 'Turing'),
-                                          ('professions',
-                                           OrderedDict([('profession',
-                                                         ['Computer Scientist',
-                                                          'Mathematician',
-                                                          'Computer Scientist',
-                                                          'Cryptographer'])]))]),
-                             OrderedDict([('firstName', 'Stephen'),
-                                          ('lastName', 'Hawking'),
-                                          ('professions',
-                                           OrderedDict([('profession',
-                                                         ['Physicist',
-                                                          'Comedian'])]))])])]))])
-#+END_SRC
-
 ** JSON Format
 
-Just like Python data structures but you have to use double quotes for strings. Here's the XML people example represented as JSON:
+Just like Python data structures except:
 
-#+BEGIN_SRC python
-{
-  "people": {
-    "person": [
-      {
-        "firstName": "Alan",
-        "lastName": "Turing",
-        "professions": {
-          "profession": ["Computer Scientist", "Mathematician",
-                         "Computer Scientist", "Cryptographer"]
-         }
-       },
-       {
-         "firstName": "Stephen",
-         "lastName": "Hawking",
-         "professions": {
-           "profession": ["Physicist", "Comedian"]
-         }
-       }
-    ]
-  }
-}
-#+END_SRC
+- double quotes -- " -- for all strings
+- ~true~ and ~false~ boolean literals instead of ~True~ and ~False~
+- ~null~ instead of ~None~
 
-** JSON Format
-
-Just like Python data structures but you have to use double quotes for strings. Here's the XML people example represented as JSON:
+Here's the XML people example represented as JSON:
 
 #+BEGIN_SRC python
 {
