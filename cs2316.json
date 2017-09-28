@@ -125,9 +125,14 @@
         "order": [17]
     },
     "regular-expressions": {
-        "topic": "[Text Processing](slides/text-processing.pdf)",
+        "topic": "[Regular Expressions](slides/regular-expressions.pdf)",
         "materials": ["IP 7", "[Python RE Module](https://docs.python.org/3/library/re.html)", "[Python Regex HowTo](https://docs.python.org/3/howto/regex.html)"],
         "order": [18]
+    },
+    "text-processing": {
+        "topic": "[Text Processing](slides/text-processing.pdf)",
+        "materials": ["IP 7", "[Python RE Module](https://docs.python.org/3/library/re.html)", "[Python Regex HowTo](https://docs.python.org/3/howto/regex.html)"],
+        "order": [100]
     },
     "web-scraping": {
         "topic": "[Web Mining](slides/web-scraping.pdf)",
