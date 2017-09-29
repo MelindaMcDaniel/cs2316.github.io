@@ -52,7 +52,7 @@ Write a module named `stocks` that includes two classes:
 
   - a method which is automatically called by the Python REPL to print the value of a `Company` object to the console and returns a string with the class name and all the attributes (except `stock_data`) between angle brackets, e.g., `<Company: name=Alphabet, symbol=GOOG, sector=Technology>`
 
-  - `performance` -- which takes an optional start date and optional end date and returns the percentage return (as a `float`, e.g., 20% is .20, 120% is 1.20) from the open price on the start date to the adjusted closing price on the end date, i.e., if you multiply the open price on the start date by the value returned by this function you get the adjusted closing price on the end date. Dates should be [datetime](https://docs.python.org/3/library/datetime.html#datetime-objects) objects with date components but no time components.
+  - `performance` -- which takes an optional start date and optional end date and returns the percentage return (as a `float`, e.g., 20% is .20, 120% is 1.20) from the open price on the start date to the adjusted closing price on the end date, i.e., if you multiply the open price on the start date by the value returned by this function and add that result to the open price on the start date, you get the adjusted closing price on the end date. Dates should be [datetime](https://docs.python.org/3/library/datetime.html#datetime-objects) objects with date components but no time components.
 
     - If the start date is not in `stock_data`, use the next date after the specified start date for which there is data.
     - If the start date is not provided, use the first date in `stock_data`.
