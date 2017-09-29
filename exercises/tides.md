@@ -57,5 +57,5 @@ $ python find_tides.py wpb-tides-2016.txt '10:00 AM' '11:00 AM' Sat Sun
 - Load the NOAA tide table TXT file into your text editor to study its format and content.
 - You'll need to ignore/skip the header lines at the top of the NOAA tide table TXT file.
 - Take note of the delimiter used in the NOAA annual tide table TXT file.
-- You'll probably want to use Python's datetime module.
+- You'll want to use [Python's datetime module](https://docs.python.org/3/library/datetime.html), in particular you'll find [datetime.strptime](https://docs.python.org/3/library/datetime.html#datetime.datetime.strptime) useful.
 - Since the NOAA annual tide table TXT file contains lines with human-readable information, reporting tides to the user is a simple matter of printing lines that match the constraints given by the user on the command line, as in the example above.
