@@ -34,8 +34,7 @@ Use SQLite in interactive mode by starting `sqlite3` with the `dorms.db` databas
     $ sqlite3 dorms.db
     SQLite version 3.13.0 2016-05-18 10:57:30
     Enter ".help" for usage hints.
-    sqlite> .tables
-    dorm     student
+    sqlite>
     ```
 
 Tell SQLite to use headers and columns when displaying table data:
@@ -44,6 +43,8 @@ Tell SQLite to use headers and columns when displaying table data:
     sqlite> .headers on
     sqlite> .mode column
     ```
+
+Pro tip: you can put the above directives to a file called `.sqliterc` in your home directory so you don't have to type them every time you start `sqlite3`.
 
 ### Exploring the Database
 
@@ -76,10 +77,16 @@ dorm_id     name        spaces
 3           Caldwell    158
 ```
 
-### Simple Queries on Dorms Database
+### Simple Queries
 
 - What are the names of all the dorms?
 - Which students have GPAs greater than 3.0?
-- Which students are in Armstrong?
 - Rank students by GPA.
 - Which student has the top GPA?
+- Which students are in Armstrong?
+
+### Advanced Queries
+
+- What is the total capacity (number of spaces) for all dorms?
+- Which dorm has the most students?
+- Which dorm's students have the highest average GPA?
