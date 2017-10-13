@@ -147,7 +147,7 @@
         "order": [100]
     },
     "sqlite": {
-        "topic": "[SQL](slides/sqlite.pdf)",
+        "topic": "[SQLite](slides/sqlite.pdf)",
         "materials": ["Exercise: [Exercise: Dorms Queries](exercises/dorms-sqlite.html)",
                       "Exercise: [Registration Database](exercises/registration-database.html)",
                       "Exercise: [Pubs Queries](exercises/pubs-queries.sql)"],
