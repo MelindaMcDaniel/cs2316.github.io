@@ -25,7 +25,8 @@ Jay Chandrasekhar <jchandrasekhar3@gatech.edu>
 Kevin Heffernan <kheffernan3@gatech.edu>
 Steve Lemme <slemme3@gatech.edu>
 Paul Soter <psoter3@gatech.edu>
-Erik Stolhanske <estolhanske3@gatech.edu>```
+Erik Stolhanske <estolhanske3@gatech.edu>
+```
 
 ## Sample Solution
 
