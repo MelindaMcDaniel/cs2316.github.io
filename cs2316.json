@@ -107,17 +107,12 @@
     },
     "data-exchange-formats": {
         "topic": "[Data Exchange Formats](slides/data-exchange-formats.pdf)",
-        "materials": ["IP 8", "[XML](slides/xml.pdf)",
+        "materials": ["IP 8", "[XML Details](slides/xml-details.pdf)",
                       "[Python XML and Database APIs](slides/python-xml-database.pdf)",
                       "[JSON Spec](http://json.org/)",
                       "[people.xml](code/structured-files/people.xml)",
                       "Exercise: [Books](exercises/books.html)"],
         "order": [16]
-    },
-    "web-services": {
-        "topic": "[Web Services](slides/web-services.pdf)",
-        "materials": ["IP 8",                      "[Requests](http://docs.python-requests.org/en/master/)", "[OAuth](https://oauth.net/)", "[JSON Spec](http://json.org/)"],
-        "order": [15,16]
     },
     "html": {
         "topic": "[HTML](slides/html.pdf)",
@@ -135,21 +130,27 @@
         "order": [100]
     },
     "web-scraping": {
-        "topic": "[Web Mining](slides/web-scraping.pdf)",
+        "topic": "[Web Scraping](slides/web-scraping.pdf)",
         "materials": ["[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)",
                       "[wx.py](code/web/wx.py)",
                       "[movie.py](code/web/movie.py)"],
         "order": [19]
     },
-    "sqlite": {
-        "topic": "[Relational Databases](slides/sqlite.pdf)",
-        "materials": [""],
+    "web-services": {
+        "topic": "[Web Services](slides/web-services.pdf)",
+        "materials": ["IP 8",                      "[Requests](http://docs.python-requests.org/en/master/)", "[OAuth](https://oauth.net/)", "[JSON Spec](http://json.org/)"],
         "order": [20]
     },
-    "sql": {
-        "topic": "[SQL](slides/sql.pdf)",
-        "materials": ["Exercise: [Registration Database](exercises/registration-database.html)",
-                     "Exercise: [Pubs Queries](exercises/pubs-queries.sql)"],
+    "relational-databases": {
+        "topic": "[Relational Databases](slides/relational-databases.pdf)",
+        "materials": [""],
+        "order": [100]
+    },
+    "sqlite": {
+        "topic": "[SQL](slides/sqlite.pdf)",
+        "materials": ["Exercise: [Exercise: Dorms Queries](exercises/dorms-sqlite.html)",
+                      "Exercise: [Registration Database](exercises/registration-database.html)",
+                      "Exercise: [Pubs Queries](exercises/pubs-queries.sql)"],
         "order": [21,22]
     },
     "sql-ddl": {
@@ -170,7 +171,7 @@
         "topic": "[SQL Queries](http://csimpkins.github.io/databases/slides/sql-queries.pdf)",
         "materials": ["[MySQL Guide](mysql.html)",
                       "Exercise: [Registration Database](exercises/registration-database.html)",
-                     "Exercise: [Exercise: Dorms Queries](exercises/dorms-queries.html)"],
+                      "Exercise: [Exercise: Dorms Queries](exercises/dorms-queries.html)"],
         "order": [23,24]
     },
     "python-db-api": {
