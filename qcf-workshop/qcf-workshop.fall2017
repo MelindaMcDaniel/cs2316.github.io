@@ -19,17 +19,16 @@ Friday, 2017-09-29
 17:00 - 19:00; csv-files;; Exercise: [Stocks](../exercises/stocks.html)
 No workshop meetings 6-7 October (Fall Break)
 Friday, 2017-10-13
-15:30 - 17:00; csv-files
-17:00 - 18:00; data-exchange-formats
-18:00 - 19:00; html
+15:30 - 18:00; csv-files
+18:00 - 19:00; data-exchange-formats
 Saturday, 2017-10-14
-10:30 - 11:30: regular-expressions
-11:30 - 13:00; web-scraping; Exercise: [Company Scraper](../exercises/company-scraper.html)
-13:00 - 14:00; web-services
+10:30 - 11:30; html
+11:30 - 13:00; text-processing,regular-expressions
+13:00 - 14:00; web-scraping; Exercise: [Company Scraper](../exercises/company-scraper.html)
+Thursday, 2017-10-19
+11:00 - 12:00: nlp
+12:00 - 13:00; scipy
+13:00 - 14:00; numpy
 Friday, 2017-10-20
-15:30 - 17:00: nlp
-17:00 - 18:00; scipy
-18:00 - 19:00; numpy
-Saturday, 2017-10-21 (Will reschedule if home game interferes)
-10:30 - 12:30; pandas
-12:30 - 14:00; matplotlib
+15:30 - 17:30; pandas
+17:30 - 19:00; matplotlib
