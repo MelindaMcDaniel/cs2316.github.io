@@ -50,8 +50,6 @@ $ python company_scraper.py tickers.txt company-data.csv
 would produce a CSV file with these contents:
 
 ```
-
-[chris@nijinsky ~/vcs/github.com/cs2316/cs2316.github.io/exercises]
 Name,SIC,Sector,Addr1,Addr2,City,State,Zip
 APPLE INC,3571,ELECTRONIC COMPUTERS,ONE INFINITE LOOP,,CUPERTINO,CA,95014
 BANK OF AMERICA CORP /DE/,6021,NATIONAL COMMERCIAL BANKS,BANK OF AMERICA CORPORATE CENTER,100 N TRYON ST,CHARLOTTE,NC,28255
@@ -71,7 +69,8 @@ WELLS FARGO & COMPANY/MN,6021,NATIONAL COMMERCIAL BANKS,420 MONTGOMERY STREET,,S
 
 - I'm not a finance expert, so if I've misconstrued some aspects of stocks, consider this assignment as practice in following specifications *as written* rather than using your own domain knowledge.
 - Use Chrome's Developer Tools or Firefox's Firebug to help you find the HTML elements that contain the data.
-- The elements that contain the data have distinct class names, so you can easily extract their text content with [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) (note that BeautifulSoup refers to elements as `tag`s).
+- Most of the elements that contain the data have distinct class attribute values, so you can easily extract their text content with [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) (note that BeautifulSoup refers to elements as `tag`s).
+- You'll need to use a regular expression to extract the sector name.
 
 ## Turn-in Procedure
 
