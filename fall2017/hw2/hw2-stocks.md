@@ -122,3 +122,7 @@ Practice safe submission! Verify that your HW files were truly submitted correct
     - It helps you realize if you omit a file or files. Missing files will not be given any credit, and non-compiling homework solutions will receive few to zero points. Also recall that late homework will not be accepted regardless of excuse. Treat the due date with respect.  Do not wait until the last minute!
 (If you do discover that you omitted a file, submit all of your files again, not just the missing one.)
     - Helps find syntax errors or runtime errors that you may have added after you last tested your code.
+
+## Sample Solution
+
+[stocks.py](stocks.py)
