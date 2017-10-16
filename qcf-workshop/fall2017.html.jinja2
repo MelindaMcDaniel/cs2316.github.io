@@ -24,7 +24,11 @@ title: QCF Python Workshop - Fall 2017
     </tr>
     {% for row in table %}
     {% if "internal_header" in row %}
-    <tr class="active"><td colspan="4">{{row["internal_header"]}}</td></tr>
+    <tr class="active">
+      <td colspan="4">
+        {{(row["internal_header"]|markdown).replace("<p>","").replace("</p>","")}}
+      </td>
+    </tr>
     {% else %}
     <tr>
       <td>{{row["date"]}}</td>
