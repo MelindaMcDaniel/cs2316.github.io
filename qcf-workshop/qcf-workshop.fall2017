@@ -25,11 +25,11 @@ Saturday, 2017-10-14
 10:30 - 11:30; html
 11:30 - 13:00; text-processing,regular-expressions
 13:00 - 14:00; web-scraping; Exercise: [Company Scraper](../exercises/company-scraper.html)
-Thursday, 2017-10-19 - In [College of Computing](http://www.myatlascms.com/map/?id=82&mrkIid=10997) Room 16 (in basement)
-16:15 - 17:00; web-scraping
-17:00 - 17:45; nlp
-17:45 - 18:30; scipy
 Friday, 2017-10-20
-15:30 - 16:30; numpy
-16:30 - 18:00; pandas
-18:00 - 19:00; matplotlib
+15:30 - 16:30; web-scraping
+16:30 - 18:00; nlp
+18:00 - 19:00; scipy
+Wednesday, 2017-10-25 - In [Howey Physics](http://www.myatlascms.com/map/?id=82&mrkIid=11011) L4
+16:30 - 17:30; numpy
+17:30 - 19:00; pandas
+19:00 - 20:00; matplotlib
