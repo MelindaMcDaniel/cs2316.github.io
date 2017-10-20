@@ -275,7 +275,13 @@
     },
     "nlp": {
         "topic": "[Natural Language Processing](slides/nlp.pdf)",
-        "materials": [""],
+        "materials": ["[NLTK](http://www.nltk.org/)"],
+        "order": [100]
+    },
+    "git": {
+        "topic": "[Git](http://csimpkins.github.io/objects-design/slides/git-basics.pdf)",
+        "materials": ["[Git Web Site](https://git-scm.com/)", "[Pro Git](https://git-scm.com/book/en/v2)"],
         "order": [100]
     }
+
 }

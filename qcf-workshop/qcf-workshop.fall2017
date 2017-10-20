@@ -27,9 +27,10 @@ Saturday, 2017-10-14
 13:00 - 14:00; web-scraping; Exercise: [Company Scraper](../exercises/company-scraper.html)
 Friday, 2017-10-20
 15:30 - 16:30; web-scraping
-16:30 - 18:00; nlp
-18:00 - 19:00; scipy
+16:30 - 17:30; git
+17:30 - 18:00; scipy
+18:00 - 19:00; numpy
 Wednesday, 2017-10-25 - In [Howey Physics](http://www.myatlascms.com/map/?id=82&mrkIid=11011) L4
-16:30 - 17:30; numpy
-17:30 - 19:00; pandas
-19:00 - 20:00; matplotlib
+16:30 - 18:00; pandas
+18:00 - 19:00; matplotlib
+19:00 - 20:00; nltk
