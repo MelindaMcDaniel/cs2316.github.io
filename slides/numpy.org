@@ -59,7 +59,7 @@ Out[6]: array([1, 2, 3])
 
 ** Basic Array Creation
 
-Pass Python lists to ~np.array()~ (nested lists create multi-dimensional arrays)
+Pass list to ~np.array()~ (nested lists create multi-dimensional arrays)
 #+BEGIN_SRC python
 In [9]: np.array([[1,2,3],[4,5,6]])
 Out[9]:
@@ -89,7 +89,7 @@ array([[ 2.72,  2.72,  2.72],
        [ 2.72,  2.72,  2.72]])
 #+END_SRC
 
-Creating a range is similar to Python's built-in ~range(start, end, stride)~:
+~np.arange~ similar to Python's built-in ~range(start, end, stride)~:
 #+BEGIN_SRC python
 In [13]: np.arange(0, 10, 2)
 Out[13]: array([0, 2, 4, 6, 8])
@@ -378,6 +378,29 @@ Since you can create arrays of bools easily with comparison ufuncs, you can comb
 In [179]: xs[(xs % 2) == 0]
 Out[179]: array([0, 2, 4, 6, 8])
 #+END_SRC
+
+** ~np.where~
+
+~np.where(cond, true_result, false_result)~ is a vectorized version of Python's ternary if-else expression.
+
+Here, we double all the even numbers:
+#+BEGIN_SRC python
+In [12]: a = np.array([[1,2,3], [4,5,6], [7,8,9]])
+
+In [14]: a
+Out[14]:
+array([[1, 2, 3],
+       [4, 5, 6],
+       [7, 8, 9]])
+
+In [15]: np.where((a % 2) == 0, a * 2, a)
+Out[15]:
+array([[ 1,  4,  3],
+       [ 8,  5, 12],
+       [ 7, 16,  9]])
+#+END_SRC
+
+Exercise: do that operation above using basic Python on a list of lists.
 
 ** Fancy Indexing
 
