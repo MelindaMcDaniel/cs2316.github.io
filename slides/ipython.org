@@ -274,29 +274,3 @@ Enter a debug session with ~%debug~ ...
 #+BEGIN_SRC python
 
 #+END_SRC
-
-
-** A Taste of Data Analytics in iPython Shell
-
-#+BEGIN_SRC sh
-In [1]: cd analytics/
-/home/chris/vcs/github.com/cs2316/cs2316.github.io/code/analytics
-
-In [3]: exam1grades = np.loadtxt('exam1grades.txt')
-
-In [4]: import matplotlib.pyplot as plt
-
-In [5]: %matplotlib qt5
-
-In [6]: plt.hist(exam1grades)
-Out[6]:
-(array([  2.,   6.,   8.,  14.,  23.,  22.,  31.,  17.,   4.,   8.]),
- array([  31. ,   38.3,   45.6,   52.9,   60.2,   67.5,   74.8,   82.1,
-          89.4,   96.7,  104. ]),
- <a list of 10 Patch objects>)
-#+END_SRC
-
-#+BEGIN_CENTER
-#+ATTR_LATEX: :height 1.5in
-[[file:../code/analytics/exam1grades.png]]
-#+END_CENTER
