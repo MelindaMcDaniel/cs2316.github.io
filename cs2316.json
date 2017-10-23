@@ -177,9 +177,9 @@
     "python-db-api": {
         "topic": "[Python Database API](slides/python-db-api.pdf)",
         "materials": ["[Python XML and Database APIs](slides/python-xml-database.pdf)",
-                      "https://www.python.org/dev/peps/pep-0249/",
-                      "https://docs.python.org/3/library/sqlite3.html",
-                      "http://pymysql.readthedocs.io/en/latest/"],
+                      "[Python DB-API](https://www.python.org/dev/peps/pep-0249/)",
+                      "[Python SQLite API](https://docs.python.org/3/library/sqlite3.html)",
+                      "[PyMySQL](http://pymysql.readthedocs.io/en/latest/)"],
         "order": [25]
     },
     "python-xml-databases": {
