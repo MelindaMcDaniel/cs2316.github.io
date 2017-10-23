@@ -38,12 +38,12 @@ Week 9
 2017-10-20;**Exam 2**
 Data Analytics
 Week 10
-2017-10-23;scipy;;[HW3 Due 2017-10-24](fall2017/hw3/hw3-company-scraper.html)
-2017-10-25;numpy
-2017-10-27;pandas;;Withdrawal Deadline 2017-10-28
+2017-10-23;python-db-api;;[HW3 Due 2017-10-24](fall2017/hw3/hw3-company-scraper.html),[HW4 Released 2017-10-24](fall2017/hw4/hw4-company-db.html)
+2017-10-25;scipy
+2017-10-27;numpy;;Withdrawal Deadline 2017-10-28
 Week 11
 2017-10-30;pandas
-2017-11-01;pandas
+2017-11-01;pandas[HW4 Due 2017-11-02](fall2017/hw4/hw4-company-db.html)
 2017-11-03;matplotlib
 Week 12
 2017-11-06;matplotlib
