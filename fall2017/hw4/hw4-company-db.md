@@ -39,30 +39,50 @@ Create a database to hold company data, write a Python script that reads CSV fil
 
 ### Part 1: Create Company Database
 
-Write a database creation script named `company-schema.sql` which creates a database with the following tables:
+Write a database creation script named `company-schema.sql` with `create table` statements that create a database with the following tables:
 
-- `company` with fields `ticker`, `name`, `sic`, `address_id`.
+- `company` with fields `ticker`, `name`, `sic`, `addr1`, `addr2`, `city`, `state`, and `zip`.
   - `ticker` should be the primary key.
   - `sic` should be a foreign key referencing the `sector` table.
-  - `address_id` should be a foreign key referencing the `address` table.
-
-- `address` with fields `address_id`, `addr1`, `addr2`, `city`, `state`, and `zip`.
-  - `address_id` should be the primary key.
 
 - `sector` with fields `sic`, `name`.
   - `sic` should be the primary key.
   - `name` comes from the `Sector` field in the source CSV file.
 
 - `stock_price` with fields `ticker`, `date`, `open`, `high`, `low`, `close`, `adj_close`, `volume`
-  - (`ticker`, `date`) should be the (composite) primary key
+  - (`ticker`, `date`) should be the (composite) primary key.
+
+To develop and test your work on the remainder of this assignment you should run your `company-schema.sql` script to create an SQLite database stored in a file such as `company.db`.
 
 ### Part 2: Import CSV Data in to Company Database
 
-Write a python script called `import_companies.py` that reads the CSV company data file you created in HW3 and the stock price CSV files named after each company's ticker symbol and inserts the data from those files into a database created with the database creation script you wrote in Part 1.
+Write a python script called `import_companies.py` that reads a CSV company data file such as the one you created in HW3 and stock price CSV files named after each company's ticker symbol -- such as the ones you used in HW2 -- and inserts the data from those files into a database created with the database creation script you wrote in Part 1.
+
+Your script should take as its first command line argument the name of a CSV file containing compnay infomation with the following header line (from HW3):
+
+  `Ticker,Name,SIC,Sector,Addr1,Addr2,City,State,Zip`
+
+and the second command line argument to your script should be the name of an SQLite database file created from the database creation script you wrote in Part 1. For each record in the CSV file your script should:
+
+- Insert the approriate information from the record into the `company` and `sector` tables of the database.
+  - Note that many companies will have the same sector. There should be only one sector record for each sector in the `sector` table.
+
+- Open the CSV file named for the company's ticker symbol. For each record in the stock data CSV file, insert an appropriate record in the `stock_price` table of the database.
+
+Sample program run:
+
+```sh
+$ python import_companies.py company-data.csv company.db
+```
 
 ### Part 3: Query Company Database
 
+Write a file named `company-queries.sql` with SQL queries that answer the following questions:
 
+- Which company has the highest stock price as of 1 September, 2017?
+- Which company or companies have had the highest volume of trading during 2016?
+- How may companies in the database are in each sector?
+- What is the average stock price of companies in each sector as of 1 September, 2017?
 
 ## Tips and Considerations
 
