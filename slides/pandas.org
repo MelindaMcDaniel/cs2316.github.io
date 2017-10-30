@@ -200,10 +200,9 @@ dtype: int64
 
 ** DataFrame
 
-
 The simplest way to create a DataFrame is with a dictionary of dictionaries:
 #+BEGIN_SRC python
-In [42]: jobs = pd.DataFrame({'salary': salary_data, 'openings': openings})
+In [42]: jobs = pd.DataFrame({'salary': salary, 'openings': openings})
 
 In [43]: jobs
 Out[43]:
@@ -334,7 +333,7 @@ Software Engineer      17085  101000
 
 Add column by broadcasting a single value:
 #+BEGIN_SRC python
-In [23]: jobs
+In [23]: jobs['CS2316 prepares'] = True
 Out[23]:
                         openings  salary 2316 Prepares
 Analytics Manager           1958  112000          True
@@ -364,6 +363,15 @@ Software Engineer          17085  101000          True      True
 Supply Chain Manager        1270  100000          True     False
 #+END_SRC
 
+** CSV Files
+
+Pandas has a very powerful CSV reader. Do this in iPython (or ~help(pd.read_csv)~ in Python):
+
+#+BEGIN_SRC python
+pd.read_csv?
+#+END_SRC
+
+Now let's read the ~super-grades.csv~ file and re-do [[http://cs2316.gatech.edu/exercises/grades.html][Grades module]] exercise using Pandas.
 
 
 # ** Data Selection in Series
