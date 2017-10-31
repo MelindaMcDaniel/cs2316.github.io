@@ -79,10 +79,10 @@ $ python import_companies.py company-data.csv company.db
 
 Write a file named `company-queries.sql` with SQL queries that answer the following questions:
 
-- Which company has the highest stock price as of 1 September, 2017?
-- Which company or companies have had the highest volume of trading during 2016?
-- How may companies in the database are in each sector?
-- What is the average stock price of companies in each sector as of 1 September, 2017?
+- What are the five companies with the highest stock price (adj_close) on 1 September, 2017? Answer should include the companies' ticker symbol, company name and stock price.
+- Which five companies had the highest volume of trading during 2016? Answer should include the companies' ticker symbol, company name and total volume for 2016.
+- How may companies in the database are in each sector? Answer should include the sector names and number of companies in each sector.
+- What is the average stock price (adj_close) of companies in each sector on 1 September, 2017? Answer should include the sector names and average stock price in each sector.
 
 ## Tips and Considerations
 
@@ -90,7 +90,7 @@ Write a file named `company-queries.sql` with SQL queries that answer the follow
 
 ## Turn-in Procedure
 
-Submit your `company_scraper.py` file on T-Square as an attachment.  When you're ready, double-check that you have submitted and not just saved a draft.
+Submit your `company-schema.sql`, `import_companies.py` and `company-queries.sql` files on T-Square as an attachment.  When you're ready, double-check that you have submitted and not just saved a draft.
 
 ## Verify the Success of Your Submission to T-Square
 
