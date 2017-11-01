@@ -374,6 +374,190 @@ pd.read_csv?
 Now let's read the ~super-grades.csv~ file and re-do [[http://cs2316.gatech.edu/exercises/grades.html][Grades module]] exercise using Pandas.
 
 
+** Read a CSV File into a DataFrame
+
+~super-grades.csv~ contains:
+#+BEGIN_SRC python
+Student,Exam 1,Exam 2,Exam 3
+Thorny,100,90,80
+Mac,88,99,111
+Farva,45,56,67
+Rabbit,59,61,67
+Ursula,73,79,83
+Foster,89,97,101
+#+END_SRC
+
+The first line is a header, which Pandas will infer, and we want to use the first column for index values:
+
+#+BEGIN_SRC python
+sgs = pd.read_csv('super-grades.csv', index_col=0)
+#+END_SRC
+
+Now we have the DataFrame we want:
+
+#+BEGIN_SRC python
+In [52]: sgs
+Out[52]:
+         Exam 1  Exam 2  Exam 3
+Student
+Thorny      100      90      80
+Mac          88      99     111
+Farva        45      56      67
+Rabbit       59      61      67
+Ursula       73      79      83
+Foster       89      97     101
+#+END_SRC
+
+** Adding a Column to a DataFrame
+
+We've seen how to add a column broadcast from a scalar value or a simple calculation from another column. Now let's add a column with the average grades for each student. We'll build this up in 3 steps:
+
+1. Find the average of a single student's grades.
+2. Create a dictionary mapping all students to their averages.
+3. Create a ~pd.Series~ object from this dictionary.
+4. Add this dictionary to our ~sgs~ ~pd.DataFrame~.
+
+** Operating on a Row of a DataFrame
+
+1. Find the average of a single student's grades.
+
+#+BEGIN_SRC python
+In [121]: np.mean(sgs.loc['Thorny'])
+Out[121]: 89.392361111111114
+#+END_SRC
+
+~Thorny~ is one of the indexes. We get all the indexes with:
+
+#+BEGIN_SRC python
+In [122]: sgs.index
+Out[122]: Index(['Thorny', 'Mac', 'Farva', 'Rabbit', 'Ursula', 'Foster'], dtype='object', name='Student')
+#+END_SRC
+
+We can iterate over the indexes and create a dictionary mapping all students to their averages.
+#+BEGIN_SRC python
+In [123]: {k: np.mean(sgs.loc[k]) for k in sgs.index}
+Out[123]:
+{'Farva': 57.517361111111114,
+ 'Foster': 94.704861111111114,
+ 'Mac': 98.142361111111114,
+ 'Rabbit': 63.454861111111114,
+ 'Thorny': 89.392361111111114,
+ 'Ursula': 78.454861111111114}
+#+END_SRC
+
+** Concatenate a Series to a DataFrame
+
+Create a ~pd.Series~ object from the dictionary of students to averages.
+
+#+BEGIN_SRC python
+In [124]: avg = pd.Series({k: np.mean(sgs.loc[k]) for k in sgs.index})
+
+In [125]: avg
+Out[125]:
+Farva     57.517361
+Foster    94.704861
+Mac       98.142361
+Rabbit    63.454861
+Thorny    89.392361
+Ursula    78.454861
+dtype: float64
+#+END_SRC
+
+Add this dictionary to our ~sgs~ ~pd.DataFrame~.
+
+#+BEGIN_SRC python
+In [126]: sgs['avg'] = avg
+
+In [127]: sgs
+Out[127]:
+         Exam 1  Exam 2  Exam 3        avg
+Student
+Thorny      100      90      80  89.392361
+Mac          88      99     111  98.142361
+Farva        45      56      67  57.517361
+Rabbit       59      61      67  63.454861
+Ursula       73      79      83  78.454861
+Foster       89      97     101  94.704861
+#+END_SRC
+
+** Appending DataFrames
+
+Now let's add a new row containing the averages for each exam. Again, we'll build this up in steps.
+
+1. Get the average of a single column.
+2. Create a list containing the column averages.
+3. Create a ~pd.DataFrame~ from this dictionary.
+4. Append our new DataFrame with the averages to the ~sgs~ DataFrame.
+
+** Average of a Single Column
+
+#+BEGIN_SRC python
+In [135]: sgs['Exam 1']
+Out[135]:
+Student
+Thorny    100
+Mac        88
+Farva      45
+Rabbit     59
+Ursula     73
+Foster     89
+Name: Exam 1, dtype: int64
+
+In [136]: np.mean(sgs['Exam 1'])
+Out[136]: 75.666666666666671
+#+END_SRC
+
+** Average of all the Columns
+
+We can get a sequence of all the column names:
+#+BEGIN_SRC python
+In [140]: sgs.columns
+Out[140]: Index(['Exam 1', 'Exam 2', 'Exam 3', 'avg'], dtype='object')
+#+END_SRC
+
+And use that to create a dictionary mapping items to dictionaries mapping 'Item Avg' the column average.
+
+#+BEGIN_SRC python
+In [179]: item_avgs = {col: {'Item Avg':np.mean(sgs[col])} for col in sgs.columns}
+
+In [180]: item_avgs
+Out[180]:
+{'Exam 1': {'Item Avg': 75.666666666666671},
+ 'Exam 2': {'Item Avg': 80.333333333333329},
+ 'Exam 3': {'Item Avg': 84.833333333333329},
+ 'avg': {'Item Avg': 80.277777777777771}}
+#+END_SRC
+
+** DataFrame from Column Averages
+
+... from which we create a DataFrame:
+#+BEGIN_SRC python
+In [183]: item_avgs_df = pd.DataFrame(item_avgs)
+
+In [184]: item_avgs_df
+Out[184]:
+             Exam 1     Exam 2     Exam 3        avg
+Item Avg  75.666667  80.333333  84.833333  80.277778
+#+END_SRC
+
+... and then append it to ~sgs~
+
+#+BEGIN_SRC python
+In [185]: sgs.append(item_avgs_df)
+Out[185]:
+              Exam 1     Exam 2      Exam 3        avg
+Thorny    100.000000  90.000000   80.000000  89.392361
+Mac        88.000000  99.000000  111.000000  98.142361
+Farva      45.000000  56.000000   67.000000  57.517361
+Rabbit     59.000000  61.000000   67.000000  63.454861
+Ursula     73.000000  79.000000   83.000000  78.454861
+Foster     89.000000  97.000000  101.000000  94.704861
+Item Avg   75.666667  80.333333   84.833333  80.277778
+#+END_SRC
+
+
+
+
 # ** Data Selection in Series
 
 # #+BEGIN_SRC python
