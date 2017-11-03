@@ -605,17 +605,52 @@ Foster     89.000000  97.000000  101.000000  95.666667     A
 Item Avg   75.666667  80.333333   84.833333  80.277778     B
 #+END_SRC
 
-** Letter Grades Counts
+** Grouping and Aggregation
+
+Grouping and aggregation can be conceptualized as a *split, apply, combine* pipeline.
+
+- Split by Grade
 
 #+BEGIN_SRC python
-In [58]: sgs.groupby('Grade').count()
+              Exam 1     Exam 2      Exam 3        avg Grade
+Thorny    100.000000  90.000000   80.000000  90.000000     A
+Mac        88.000000  99.000000  111.000000  99.333333     A
+Foster     89.000000  97.000000  101.000000  95.666667     A
+#+END_SRC
+
+#+BEGIN_SRC python
+              Exam 1     Exam 2      Exam 3        avg Grade
+Item Avg   75.666667  80.333333   84.833333  80.277778     B
+#+END_SRC
+
+#+BEGIN_SRC python
+              Exam 1     Exam 2      Exam 3        avg Grade
+Ursula     73.000000  79.000000   83.000000  78.333333     C
+#+END_SRC
+
+#+BEGIN_SRC python
+              Exam 1     Exam 2      Exam 3        avg Grade
+Farva      45.000000  56.000000   67.000000  56.000000     D
+Rabbit     59.000000  61.000000   67.000000  62.333333     D
+#+END_SRC
+
+- Apply some aggregation function to each group, such as sum, mean, count.
+
+- Combine results of function applications to get final results for each group.
+
+** Letter Grades Counts
+
+Here's how to find the counts of letter grades for our super troopers:
+
+#+BEGIN_SRC python
+In [58]: sgs['Grade'].groupby(sgs['Grade']).count()
 Out[58]:
-       Exam 1  Exam 2  Exam 3  avg  Average
 Grade
-A           3       3       3    3        3
-B           1       1       1    1        1
-C           1       1       1    1        1
-D           2       2       2    2        2
+A    3
+B    1
+C    1
+D    2
+Name: Grade, dtype: int64
 #+END_SRC
 
 
