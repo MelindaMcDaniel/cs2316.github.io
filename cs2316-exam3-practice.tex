@@ -1,0 +1,455 @@
+\documentclass[addpoints,9pt]{exam}
+\usepackage{verbatim, multicol, tabularx,}
+\usepackage{amsmath,amsthm, amssymb, latexsym, listings, qtree}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=1mm,
+  belowskip=0mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\ttfamily},
+  numbers=none,
+  frame=single,
+  breaklines=true,
+  breakatwhitespace=true
+}
+
+
+\title{CS 2316 Exam 3}
+\date{Practice}
+\setcounter{page}{0}
+\begin{document}
+
+\maketitle
+\thispagestyle{head}
+%% \firstpageheader{}
+%%               {\tiny Copyright \textcopyright\ 2016 All rights reserved. Duplication and/or usage for purposes of any kind without permission is strictly forbidden.}
+%%               {}
+
+
+\runningheader{}
+              {\tiny Copyright \textcopyright\ 2017 All rights reserved. Duplication and/or usage for purposes of any kind without permission is strictly forbidden.}
+              {}
+
+\footer{Page \thepage\ of \numpages}
+              {}
+              {Points available: \pointsonpage{\thepage} -
+               points lost: \makebox[.5in]{\hrulefill} =
+               points earned:  \makebox[.5in]{\hrulefill}.
+              Graded by: \makebox[.5in]{\hrulefill}}
+
+
+\ifprintanswers
+\begin{center}
+{\LARGE ANSWER KEY}
+\end{center}
+\else
+\vspace{0.1in}
+\hbox to \textwidth{Name (print clearly): \enspace\hrulefill}
+\vspace{0.3in}
+\hbox to \textwidth{T-Square ID (gtg, gth, msmith3, etc): \underline{\hspace{2in}} Section (e.g., B1): \underline{\hspace{.75in}}}
+\vspace{0.3in}
+\hbox to \textwidth{Signature: \enspace\hrulefill}
+
+\fi
+
+\vfill
+
+\begin{itemize}
+\item Failure to properly fill in the information on this page will result in a deduction of up to 5 points from your exam score.
+\item Signing signifies you are aware of and in accordance with the {\bf Academic Honor Code of Georgia Tech} and that you will not discuss this exam with other students.
+\item Calculators and cell phones are NOT allowed.
+\item Answers containing Python code must use valid Python code, including case-sensitivity, syntax, and API correctness.
+\end{itemize}
+
+\vfill
+
+% Points Table
+%\begin{center}
+\addpoints
+%\gradetable[v][pages]
+%\end{center}
+
+% Points Table
+\begin{center}
+\renewcommand{\arraystretch}{2}
+\begin{tabularx}{\textwidth}{|l|c|X|X|X|}
+        \hline
+Question & Points per Page & Points Lost & Points Earned & Graded By \\
+\hline
+Page 1 & \pointsonpage{1} & - & =  &\\
+\hline
+Page 2 & \pointsonpage{2} & - & =  &\\
+\hline
+Page 3 & \pointsonpage{3} & - & =  &\\
+\hline
+Page 4 & \pointsonpage{4} & - & =  &\\
+\hline
+Page 5 & \pointsonpage{5} & - & =  &\\
+\hline
+TOTAL & \numpoints & - & =  & \\
+\hline
+\end{tabularx}
+\end{center}
+
+\newpage
+
+%\normalsize
+
+\pointsinmargin
+\bracketedpoints
+
+\marginpointname{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+
+\question {\bf Multiple Choice} Circle the letter of the best answer.
+
+\begin{parts}
+
+\part[3] Given this definition:
+
+\begin{lstlisting}[language=Python]
+d = {
+  "people": {
+    "person": [
+      {
+        "firstName": "Alan",
+        "lastName": "Turing",
+        "professions": {
+          "profession": ["Computer Scientist", "Mathematician",
+                         "Computer Scientist", "Cryptographer"]
+         }
+       },
+       {
+         "firstName": "Stephen",
+         "lastName": "Hawking",
+         "professions": {
+           "profession": ["Physicist", "Comedian"]
+         }
+       }
+    ]
+  }
+}
+\end{lstlisting}
+
+\part[3] Which of the following returns the second profession of Stephen Hawking (whose value would be {\tt 'Comedian'})?
+
+\begin{choices}
+  \correctchoice {\tt d['people']['person'][1]['professions']['profession'][1]}
+  \choice {\tt d['people']['person'][1]['professions']['profession']}
+  \choice {\tt d['people']['person'][1]['professions']['Comedian']}
+\end{choices}
+
+\part[3] What's the type of {\tt d['people']['person'][1]['professions']['profession']}
+
+\begin{choices}
+  \choice {\tt tuple}
+  \choice {\tt dict}
+  \correctchoice {\tt list}
+\end{choices}
+
+\part[3] What's the value of {\tt d['people']['person'][0]['firstName']}?
+
+\begin{choices}
+  \choice 'Hawking'
+  \choice 'Stephen'
+  \choice 'Turing'
+  \correctchoice 'Alan'
+\end{choices}
+
+\part[3] Which of the following Python expressions opens a file for reading as text?
+
+\begin{choices}
+\choice {\tt open "season"}
+\choice {\tt open("borders", 'wb')}
+\correctchoice {\tt open("sesame", 'r')}
+\choice All of the above
+\end{choices}
+
+\end{parts}
+
+\newpage
+
+\question  {\bf Multiple Choice} Circle the letter of the best choice.
+
+\begin{parts}
+
+\part[3] The fundamental data abstraction in relational databases is the table.
+
+\begin{choices}
+\correctchoice True
+\choice False
+\end{choices}
+
+\part[3] In order for a foreign key in one table to reference a primary key in another table, it must have the same name.
+
+\begin{choices}
+  \choice True
+  \correctchoice False
+\end{choices}
+
+\part[3] An author can write many books and a book can have many authors.  What kind of cardinality relationship exists between authors and books?
+
+\begin{choices}
+\correctchoice many to many
+\choice one to one
+\choice one to many
+\end{choices}
+
+\part[3] The CSV data model can encode any data model that the XML data model can.
+
+\begin{choices}
+\choice True
+\correctchoice False
+\end{choices}
+
+\part[3] Which of the following is {\bf not} well-formed XML?
+
+\begin{choices}
+\choice {\tt <a> <b> c </b> </a>}
+\correctchoice {\tt <a> <b> <c> </b> </a>}
+\choice {\tt <a> <b> <c/> </b> </a>}
+\choice {\tt <a> <b> <c> d </c> </b> </a>}
+\end{choices}
+
+
+\end{parts}
+
+\newpage
+
+\question {\bf Short Answer}
+
+\begin{parts}
+
+\part[5] What command would you type in iPython to find your present working directory?
+
+\ifprintanswers
+\begin{lstlisting}[language=Python]
+pwd or %pwd
+\end{lstlisting}
+\else
+\vspace{1in}
+\fi
+
+\part[5] How would you find out what the {\tt \%prun} command does in iPython?
+
+\ifprintanswers
+\begin{lstlisting}[language=Python]
+%prun?
+\end{lstlisting}
+\else
+\vspace{1in}
+\fi
+
+\part[5] Write an expression that creates a NumPy array of 5 integers. Assume {\tt import numpy as np} has been done.
+
+\ifprintanswers
+Many possibilities
+\begin{lstlisting}[language=Python]
+np.arange(5)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python]
+np.zeros(5, dtype=int) # or np.ones
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python]
+np.array([0, 1, 2, 3, 4])
+\end{lstlisting}
+
+\else
+\vspace{1in}
+\fi
+
+\part[5]  Write an expression that creates a 3 x 3  NumPy array of integers. Assume {\tt import numpy as np} has been done.
+
+\ifprintanswers
+Many possibilities
+\begin{lstlisting}[language=Python]
+np.arange(9).reshape((3,3))
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python]
+np.zeros(9, dtype=int).reshape((3,3))
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python]
+np.array([[1,2,3],[4,5,6],[7,8,9]])
+\end{lstlisting}
+
+\else
+\vspace{1in}
+\fi
+
+\part[5] Given a dictionary {\tt d} created by {\tt d = dict(zip(['a', 'b', 'c', 'd'], range(4)))}, write a statement that creates a Pandas Series from {\tt d} and assigns it to the variable {\tt data}. Assume {\tt import pandas as pd} has been done.
+
+\ifprintanswers
+Many possibilities
+\begin{lstlisting}[language=Python]
+data = pd.Series(d)
+\end{lstlisting}
+\else
+\vspace{1in}
+\fi
+
+\part[5] After creating the series {\tt data} above, what would {\tt data['b']} return?
+\ifprintanswers
+\begin{lstlisting}[language=Python]
+1
+\end{lstlisting}
+\else
+\vspace{1in}
+\fi
+
+
+\end{parts}
+
+\newpage
+
+\question Short answer
+
+Given:
+\begin{lstlisting}[language=Python]
+salary = {"Data Scientist": 110000,
+          "DevOps Engineer": 110000,
+          "Data Engineer": 106000,
+          "Analytics Manager": 112000,
+          "Database Administrator": 93000,
+          "Software Architect": 125000,
+          "Software Engineer": 101000,
+          "Supply Chain Manager": 100000}
+openings = {"Data Scientist": 4184,
+            "DevOps Engineer": 2725,
+            "Data Engineer": 2599,
+            "Analytics Manager": 1958,
+            "Database Administrator": 2877,
+            "Software Architect": 2232,
+            "Software Engineer": 17085,
+            "Supply Chain Manager": 1270}
+\end{lstlisting}
+
+\begin{parts}
+
+\part[5] Write a statement that assigns to {\tt salary\_data} a Panda series with the data from the {\tt salary} dictionary.
+
+\ifprintanswers
+\begin{verbatim}
+salary_data = pd.Series(salary)
+\end{verbatim}
+\else
+\vspace{.75in}
+\fi
+
+\part[5] After the assignment above, what is the value of {\tt salary\_data[’Software Engineer’]}
+
+\ifprintanswers
+\begin{verbatim}
+101000
+\end{verbatim}
+\else
+\vspace{.75in}
+\fi
+
+\part[5] Write a statement that assigns to {\tt jobs} a Panda DataFrame from the data in the {\tt salary} and {\tt openings} dictionaries with {\tt 'salary'} as the heading for the salary column and {\tt 'openings'} as the heading for the openings column.
+
+\ifprintanswers
+\begin{verbatim}
+1 pt   1 pt         1 pt                    1 pt (1 pt remainder of syntax)
+jobs = pd.DataFrame({'salary': salary_data, 'openings': openings})
+\end{verbatim}
+\else
+\vspace{.75in}
+\fi
+
+\part[5] Write an expression that returns all the jobs in the {\tt jobs} DataFrame with salary greater than 100000.
+
+\ifprintanswers
+\begin{verbatim}
+ jobs[jobs[’salary’] > 100000]
+\end{verbatim}
+\else
+\vspace{.75in}
+\fi
+
+\part[5] Write an assignment statement that adds a column to {\tt jobs} called {\tt '6 figures'} whose values are {\tt True} for jobs with salaries greater than 100000 and {\tt False} otherwise.
+
+\ifprintanswers
+\begin{verbatim}
+2 pts               3 pts
+jobs[’6 Figures’] = jobs[’salary’] > 100000
+\end{verbatim}
+\else
+\vspace{.75in}
+\fi
+
+
+\end{parts}
+
+\newpage
+
+\question {\bf Short Answer}
+
+\begin{parts}
+
+Assuming a database with the following schema is stored in an SQLite3 database file named {\tt dorms.db},
+
+\begin{lstlisting}[language=SQL]
+create table dorm (
+    dorm_id integer primary key autoincrement,
+    name text,
+    spaces integer
+);
+create table stud (
+    stud_id integer primary key autoincrement,
+    name text,
+    gpa float,
+    dorm_id integer references dorm(dorm_id)
+);
+\end{lstlisting}
+
+\part[15] write a snippet of Python code that queries the database and stores in a variable named {\tt dorm\_assignments} a list whose elements are tuples, where each tuple contains a student name and the name of the dorm that student lives in, e.g., tuples like {\tt ('Cartman', 'Armstrong')}. Assume the {\tt sqlite3} module is imported.
+
+\begin{solution}[2in]
+\begin{verbatim}
+conn = sqlite3.connect("dorms.db")                    # 2 pts
+curs = conn.cursor()                                  # 1 pt
+curs.execute("select stud.name, dorm.name " +         # 2 pts execute(), 3 pts select header
+             "from student join dorm using(dorm_id)") # 4 pts correct join
+dorm_assignments = curs.fetchall()                    # 3 pts (other methods also correct)
+\end{verbatim}
+\end{solution}
+
+\part[5] Write a single Python expression that creates a tuple mapping student names to the names of the dorms they live in using the {\tt dorm\_assignments} list created above.
+
+\begin{solution}[1in]
+\begin{verbatim}
+dict(dorm_assignments)
+or
+ 2 pts         2 pts         1 pt
+{stud:dorm for stud, dorm in dorm_assignments}
+or
+{t[0]:t[1] for t in dorm_assignments}
+\end{verbatim}
+\end{solution}
+
+
+\part[5] Write a single Python expressions that creates a list of students in Armstrong  using the {\tt dorm\_assignments} list created above.
+
+\begin{solution}[1in]
+\begin{verbatim}
+ 1 pt     1 pt         1 pt             2 pts
+[stud for stud,dorm in dorm_assignments if dorm == 'Armstrong']
+or
+[t[0] for t in dorm_assignments if t[1] == 'Armstrong']
+\end{verbatim}
+\end{solution}
+
+
+\end{parts}
+
+\end{questions}
+
+\end{document}
