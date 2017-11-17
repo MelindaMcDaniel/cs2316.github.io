@@ -24,31 +24,31 @@
         "materials": ["[ITCS - Lists](http://interactivepython.org/runestone/static/thinkcspy/Lists/toctree.html)", "[ITCS - Dictionaries](http://interactivepython.org/runestone/static/thinkcspy/Dictionaries/toctree.html)", "TP 10,11,12", "[Video: Data Structures](https://youtu.be/TtAQxtgPOwI)"],
         "order": [4]
     },
-    "strings": {
-        "topic": "[Strings](slides/strings.html)",
-        "materials": ["[ITCS - Simple Data](http://interactivepython.org/runestone/static/thinkcspy/Strings/toctree.html)", "IP 2"],
-        "order": [100]
+    "functions": {
+        "topic": "[Functions](slides/functions.pdf)",
+        "materials": ["[ITCS - Functions](http://interactivepython.org/runestone/static/thinkcspy/Functions/toctree.html)", "[ITCS - Turtles](http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/toctree.html)", "TP 3"],
+        "order": [5]
+    },
+    "modules-programs": {
+        "topic": "[Modules and Programs](slides/modules-programs.pdf)",
+        "materials": ["[ITCS - Modules](http://interactivepython.org/runestone/static/thinkcspy/PythonModules/toctree.html)", "TP 1,14", "[hanglib](code/hanglib/)", "Exercise: [BMI Module](exercises/bmi.html)", "Exercise: [Hangman](exercises/hangman.html)"],
+        "order": [6]
+    },
+    "ipython": {
+        "topic": "[iPython](slides/ipython.pdf)",
+        "materials": [""],
+        "order": [7]
     },
     "control-structures": {
         "topic": "[Control Structures](slides/control-structures.pdf)",
         "materials": ["[ITCS - Selection](http://interactivepython.org/runestone/static/thinkcspy/Selection/toctree.html)",
                       "[ITCS - Iteration](http://interactivepython.org/runestone/static/thinkcspy/MoreAboutIteration/toctree.html)", "TP 5, 7","Exercise: [Grades Module](exercises/grades.html)"],
-        "order": [5]
-    },
-    "functions": {
-        "topic": "[Functions](slides/functions.pdf)",
-        "materials": ["[ITCS - Functions](http://interactivepython.org/runestone/static/thinkcspy/Functions/toctree.html)", "[ITCS - Turtles](http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/toctree.html)", "TP 3"],
-        "order": [6]
-    },
-    "modules-programs": {
-        "topic": "[Modules and Programs](slides/modules-programs.pdf)",
-        "materials": ["[ITCS - Modules](http://interactivepython.org/runestone/static/thinkcspy/PythonModules/toctree.html)", "TP 1,14", "[hanglib](code/hanglib/)", "Exercise: [BMI Module](exercises/bmi.html)", "Exercise: [Hangman](exercises/hangman.html)"],
-        "order": [7]
+        "order": [8]
     },
     "functional-programming": {
         "topic": "[Functional programming](slides/functional-programming.pdf)",
         "materials": ["TP 19"],
-        "order": [8]
+        "order": [9]
     },
     "data-representation": {
         "topic": "[Data Representation](slides/data-representation.pdf)",
@@ -60,20 +60,20 @@
         "materials": ["[ITCS - Classes and Objects](http://interactivepython.org/runestone/static/thinkcspy/ClassesBasics/toctree.html)", "[OOP Code](https://github.com/cs2316/cs2316.github.io/tree/master/code/classes)",
                       "TP 15 - 18",
                      "[Exercise: Treating People as Objects](exercises/people-objects.html)"],
-        "order": [9]
+        "order": [10]
     },
     "review1": {
         "topic": "Review 1",
         "materials": ["[cs2316-exam1-practice.pdf](cs2316-exam1-practice.pdf)",
                       "[cs2316-exam1-practice-answers.pdf](cs2316-exam1-practice-answers.pdf)",
                      "[Exam 1 Practice Problems](exercises/exam1-practice.html)"],
-        "order": [10]
+        "order": [11]
     },
     "exam1": {
         "topic": "**Exam 1**",
         "materials": ["[cs2316-exam1-practice.pdf](cs2316-exam1-practice.pdf)",
                       "[cs2316-exam1-practice-answers.pdf](cs2316-exam1-practice-answers.pdf)"],
-        "order": [11]
+        "order": [12]
     },
     "pq1": {
         "topic": "**Programming Extra Credit 1**",
@@ -83,12 +83,12 @@
     "file-io": {
         "topic": "[File IO](slides/file-io.pdf)",
         "materials": ["IP 8", "[Exercise: Tree](exercises/tree.html)"],
-        "order": [12]
+        "order": [13]
     },
     "csv-files": {
         "topic": "[CSV Files](slides/csv-files.pdf)",
         "materials": ["IP 8", "Exercise: [Student Emails](exercises/student-emails.html) ([Sample Answer](exercises/student_emails.py))", "Exercise: [Tides](exercises/tides.html)", "Exercise: [Calculate Grades](exercises/calc-grades.html)"],
-        "order": [13]
+        "order": [14]
     },
     "xml": {
         "topic": "[Data Exchange Formats](slides/xml.pdf)",
@@ -98,7 +98,7 @@
                       "[Python XML and Database APIs](slides/python-xml-database.pdf)",
                       "[people.xml](code/structured-files/people.xml)",
                       "Exercise: [Books](exercises/books.html)"],
-        "order": [14,15]
+        "order": [100]
     },
     "json": {
         "topic": "[JavaScript Object Notation](slides/json.pdf)",
@@ -112,17 +112,17 @@
                       "[JSON Spec](http://json.org/)",
                       "[people.xml](code/structured-files/people.xml)",
                       "Exercise: [Books](exercises/books.html)"],
-        "order": [16]
+        "order": [15]
     },
     "html": {
         "topic": "[HTML](slides/html.pdf)",
         "materials": ["IP 8", "<a href=\"\"></a>"],
-        "order": [17]
+        "order": [16]
     },
     "regular-expressions": {
         "topic": "[Regular Expressions](slides/regular-expressions.pdf)",
         "materials": ["IP 7", "[Python RE Module](https://docs.python.org/3/library/re.html)", "[Python Regex HowTo](https://docs.python.org/3/howto/regex.html)"],
-        "order": [18]
+        "order": [17]
     },
     "text-processing": {
         "topic": "[Text Processing](slides/text-processing.pdf)",
@@ -134,12 +134,12 @@
         "materials": ["[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)",
                       "[wx.py](code/web/wx.py)",
                       "[movie.py](code/web/movie.py)"],
-        "order": [19]
+        "order": [18]
     },
     "web-services": {
         "topic": "[Web Services](slides/web-services.pdf)",
         "materials": ["IP 8",                      "[Requests](http://docs.python-requests.org/en/master/)", "[OAuth](https://oauth.net/)", "[JSON Spec](http://json.org/)"],
-        "order": [20]
+        "order": [19]
     },
     "relational-databases": {
         "topic": "[Relational Databases](slides/relational-databases.pdf)",
@@ -151,28 +151,28 @@
         "materials": ["Exercise: [Exercise: Dorms Queries](exercises/dorms-sqlite.html)",
                       "Exercise: [Registration Database](exercises/registration-database.html)",
                       "Exercise: [Pubs Queries](exercises/pubs-queries.sql)"],
-        "order": [21,22]
+        "order": [100]
     },
     "sql-ddl": {
         "topic": "[SQL DDL](http://csimpkins.github.io/databases/slides/sql-ddl.pdf)",
         "materials": ["[MySQL Guide](mysql.html)",
                       "Exercise: [Registration Database](exercises/registration-database.html)",
                      "Exercise: [Pubs Queries](exercises/pubs-queries.sql)"],
-        "order": [21]
+        "order": [20]
     },
     "sql-crud": {
         "topic": "[SQL CRUD](http://csimpkins.github.io/databases/slides/sql-crud.pdf)",
         "materials": ["[MySQL Guide](mysql.html)",
                       "Exercise: [Registration Database](exercises/registration-database.html)",
                      "Exercise: [Pubs Queries](exercises/pubs-queries.sql)"],
-        "order": [22]
+        "order": [21]
     },
     "sql-queries": {
         "topic": "[SQL Queries](http://csimpkins.github.io/databases/slides/sql-queries.pdf)",
         "materials": ["[MySQL Guide](mysql.html)",
                       "Exercise: [Registration Database](exercises/registration-database.html)",
                       "Exercise: [Exercise: Dorms Queries](exercises/dorms-queries.html)"],
-        "order": [23,24]
+        "order": [22,23]
     },
     "python-db-api": {
         "topic": "[Python Database API](slides/python-db-api.pdf)",
@@ -180,7 +180,7 @@
                       "[Python DB-API](https://www.python.org/dev/peps/pep-0249/)",
                       "[Python SQLite API](https://docs.python.org/3/library/sqlite3.html)",
                       "[PyMySQL](http://pymysql.readthedocs.io/en/latest/)"],
-        "order": [25]
+        "order": [24]
     },
     "python-xml-databases": {
         "topic": "[Python XML and Database APIs](slides/python-xml-database.pdf)",
@@ -191,12 +191,12 @@
         "topic": "Review 2",
         "materials": ["[cs2316-exam2-practice.pdf](cs2316-exam2-practice.pdf)",
                       "[cs2316-exam2-practice-answers.pdf](cs2316-exam2-practice-answers.pdf)"],
-        "order": [23]
+        "order": [25]
     },
     "exam2": {
         "topic": "**Exam 2**",
         "materials": [""],
-        "order": [24]
+        "order": [26]
     },
     "pq2": {
         "topic": "**Programming Extra Credit 2**",
@@ -211,39 +211,34 @@
     "data-analytics": {
         "topic": "[Data Analytics](slides/scipy.pdf)",
         "materials": [""],
-        "order": [25]
-    },
-    "ipython": {
-        "topic": "[iPython](slides/ipython.pdf)",
-        "materials": [""],
-        "order": [25]
+        "order": [27]
     },
     "numpy": {
         "topic": "[NumPy](slides/numpy.pdf)",
         "materials": [""],
-        "order": [26]
+        "order": [28]
     },
     "pandas": {
         "topic": "[Pandas](slides/pandas.pdf)",
         "materials": [""],
-        "order": [27,28,29]
+        "order": [29,30,31]
     },
     "matplotlib": {
         "topic": "[Matplotlib](slides/matplotlib.pdf)",
         "materials": [""],
-        "order": [30,31]
+        "order": [32]
     },
     "review3": {
         "topic": "[Review 3](slides/review3.pdf)",
         "materials": ["[cs2316-exam3-practice.pdf](cs2316-exam3-practice.pdf)",
                      "[cs2316-exam3-practice-answers.pdf](cs2316-exam3-practice-answers.pdf)"],
 
-        "order": [32]
+        "order": [33]
     },
     "exam3": {
         "topic": "**Exam 3**",
         "materials": [""],
-        "order": [33]
+        "order": [34]
     },
     "pq3": {
         "topic": "**Programming Extra Credit 3**",
@@ -253,18 +248,28 @@
     "python-guis": {
         "topic": "[Python GUIs](slides/pyqt-guis.pdf)",
         "materials": ["[GUI Example Code](https://github.com/cs2316/cs2316.github.io/tree/master/code/gui)"],
-        "order": [34, 35, 36]
+        "order": [35, 36, 37]
     },
     "flask": {
         "topic": "[Flask](slides/flask.pdf)",
         "materials": ["IP 9", "[Flask Web site](http://flask.pocoo.org/)",
                       "[Gradeboook App](code/web/gradebook.zip)"],
-        "order": [37]
+        "order": [38]
+    },
+    "scikit-learn": {
+        "topic": "[Scikit-learn](slides/scikit-learn.pdf)",
+        "materials": [""],
+        "order": [39]
+    },
+    "hadoop": {
+        "topic": "[Hadoop](slides/hadoop.pdf)",
+        "materials": [""],
+        "order": [40]
     },
     "spark": {
         "topic": "[Spark](slides/spark.pdf)",
         "materials": [""],
-        "order": [38]
+        "order": [41]
     },
     "relational-databases": {
         "topic": "[Relational Databases](slides/relational-databases.pdf)",
