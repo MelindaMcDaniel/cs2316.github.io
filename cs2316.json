@@ -206,11 +206,6 @@
     "scipy": {
         "topic": "[Data Analytics](slides/scipy.pdf)",
         "materials": [""],
-        "order": [100]
-    },
-    "data-analytics": {
-        "topic": "[Data Analytics](slides/scipy.pdf)",
-        "materials": [""],
         "order": [27]
     },
     "numpy": {
@@ -227,6 +222,11 @@
         "topic": "[Matplotlib](slides/matplotlib.pdf)",
         "materials": [""],
         "order": [32]
+    },
+    "data-analysis": {
+        "topic": "[Data Analysis](slides/data-analysis.pdf)",
+        "materials": [""],
+        "order": [100]
     },
     "review3": {
         "topic": "[Review 3](slides/review3.pdf)",
